@@ -1,0 +1,9 @@
+|SeqDet1101
+Y <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+X => inst17.IN0
+X => Q0.DATAIN
+X => inst1.IN0
+CLK => Q1.CLK
+CLK => Q0.CLK
+
+

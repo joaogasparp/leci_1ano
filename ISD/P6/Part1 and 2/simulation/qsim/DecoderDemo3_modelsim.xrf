@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/joaog/ISD/P6/Part1 and 2/DecoderDemo3.bdf
+source_file = 1, C:/Users/joaog/ISD/P6/Part1 and 2/Waveform4.vwf
+source_file = 1, C:/Users/joaog/ISD/P6/Part1 and 2/dec4_16.bdf
+source_file = 1, C:/Users/joaog/ISD/P6/Part1 and 2/decoderdemo.bdf
+design_name = DecoderDemo3
+instance = comp, \cmpOut~output\, cmpOut~output, DecoderDemo3, 1
+instance = comp, \x1~input\, x1~input, DecoderDemo3, 1
+instance = comp, \x3~input\, x3~input, DecoderDemo3, 1
+instance = comp, \x0~input\, x0~input, DecoderDemo3, 1
+instance = comp, \x2~input\, x2~input, DecoderDemo3, 1
+instance = comp, \inst2~0\, inst2~0, DecoderDemo3, 1
+instance = comp, \e1~input\, e1~input, DecoderDemo3, 1
+instance = comp, \e0~input\, e0~input, DecoderDemo3, 1
+instance = comp, \inst2~1\, inst2~1, DecoderDemo3, 1

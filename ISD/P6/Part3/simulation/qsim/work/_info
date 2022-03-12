@@ -1,0 +1,150 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/joaog/ISD/P6/Part3/simulation/qsim
+vEncoderDemo
+!s110 1638714402
+!i10b 1
+!s100 =f^EM56Z;TGGz]jT:64Ge2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<gMTH@K]P<H8c7>UF@IKC3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1638714400
+8EncoderDemo.vo
+FEncoderDemo.vo
+!i122 14
+L0 32 294
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1638714402.000000
+!s107 EncoderDemo.vo|
+!s90 -work|work|EncoderDemo.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@encoder@demo
+vEncoderDemo_vlg_vec_tst
+!s110 1638714403
+!i10b 1
+!s100 @jec[]`5M[TANfCIH@P5Y1
+R1
+Ia]nY@UJR^JQDa1O^GPjii0
+R2
+R0
+w1638714398
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 15
+L0 30 100
+R3
+r1
+!s85 0
+31
+!s108 1638714403.000000
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R4
+R5
+n@encoder@demo_vlg_vec_tst
+Epenc8_3
+Z6 w1638713884
+Z7 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z8 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
+Z9 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z10 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z11 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z12 DPx10 cycloneive 21 cycloneive_components 0 22 zGMDhP>8e@2k@f0e<PY]k2
+!i122 8
+R0
+Z13 8EncoderDemo.vho
+Z14 FEncoderDemo.vho
+l0
+L35 1
+VkjC>Q6?Sc;Zn_l3cTbP^E3
+!s100 o:z23;BbcTY2ob_3AUU>42
+Z15 OV;C;2020.1;71
+32
+Z16 !s110 1638713886
+!i10b 1
+Z17 !s108 1638713886.000000
+Z18 !s90 -work|work|EncoderDemo.vho|
+Z19 !s107 EncoderDemo.vho|
+!i113 1
+R4
+Z20 tExplicit 1 CvgOpt 0
+Astructure
+R7
+R8
+R9
+R10
+R11
+R12
+DEx4 work 7 penc8_3 0 22 kjC>Q6?Sc;Zn_l3cTbP^E3
+!i122 8
+l97
+L53 298
+VYHR@l=hjhm6=0Umo6ML1Q0
+!s100 B=;1]eo<A]GMkR=XFICKP3
+R15
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R4
+R20
+Epenc8_3_vhd_vec_tst
+Z21 w1638713882
+R10
+R11
+!i122 9
+R0
+Z22 8Waveform1.vwf.vht
+Z23 FWaveform1.vwf.vht
+l0
+L32 1
+Vh0zl==6lT5;gh8hdnITMF2
+!s100 R9EC[W<:jil;C_kbTLlL51
+R15
+32
+Z24 !s110 1638713887
+!i10b 1
+Z25 !s108 1638713887.000000
+Z26 !s90 -work|work|Waveform1.vwf.vht|
+Z27 !s107 Waveform1.vwf.vht|
+!i113 1
+R4
+R20
+Apenc8_3_arch
+R10
+R11
+DEx4 work 19 penc8_3_vhd_vec_tst 0 22 h0zl==6lT5;gh8hdnITMF2
+!i122 9
+l67
+L34 143
+Va8`7AY6Ecc7]GJcRLl=mb1
+!s100 QUfEVHLd>KP0olTj4Yf4[3
+R15
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R4
+R20

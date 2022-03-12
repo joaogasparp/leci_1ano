@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./css/acerca.css">
+    <title>Acerca deste projeto</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="sidebar">
+            <div class="profile">
+                <img src="./img/logo.png" alt="logo">
+                <h3>Mecânica</h3>
+                <p>Dinâmica e Cinemática</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">INÍCIO</a></li>
+                    <!--Introdução-->
+                    <li><a href="./capitulos.html">CAPÍTULOS</a></li>
+                    <li><a href="./exercicios.html">EXERCÍCIOS</a></li>
+                    <li><a href="./about.html">ACERCA</a></li>
+                </ul>
+                <div class="relogio">
+                    <div class="display">00:00:00</div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="uabar">
+            <img src="./img/ua.png" alt="UA - Logo" style="max-width: 20%;"> <br> <br> Universidade de Aveiro
+            <br> <br> LECI - Licenciatura em Engenharia de Computadores e Informática
+            <br><br> Introdução à Engenharia Informática
+            <br> <br> Data de criação - 19/02/2022
+            <br><br>
+            <div class="codeua" style="text-align: center;">
+                <a href="http://code.ua.pt//projects/infor2021-ap-g62/repository" target="_blank">Code.UA</a>
+            </div>
+            <br>
+            <div class="contribuicoes" style="text-align: center;">
+                <button class="btn btn-warning" data-toggle="modal" data-target="#oMeuPopup">
+                    Contribuições <br> Recursos externos
+                </button>
+                <div id="oMeuPopup" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">Contribuições e Recursos externos</h4>
+                            </div>
+                            <div class="modal-body" style="text-align: justify;">
+                                <p style="font-size: 25px;">Contribuições</p>
+                                <p>Nós consideramos que o trabalho foi bem distribuído entre nós. A base deste projeto foi o trabalho de aprofundamento prévio em formato LaTeX. Começámos por fazer o design da página e das suas correspondentes sub-páginas
+                                    para, de seguida, o pormos em prática. A comunicação foi algo indispensável neste projeto, pois assim conseguimos ajudarmo-nos mutuamente nos problemas que eventualmente nos iria aparecendo.
+                                    <br><br> <tt>Beatriz Oliveira</tt> - Realizou na página Início "O que é?", na página Capítulos fez a barra de navegação e os capítulos 1 e 2, efetuou a página Exercícios e executou a página Acerca. <br>
+                                    <tt>João Gaspar</tt> - Realizou o desing base da página Início, na página Capítulos fez os capítulos 3, 4 e 5 e adicinou gráficos no capítulo 1, efetuou na página Exercícios a calculadora e executou o relógio.
+                                    <br><br> Deste modo, ambos achamos que estivemos, cada um, 50% presentes neste trabalho.
+                                </p>
+                                <p style="font-size: 25px;">Recursos externos</p>
+                                <p>
+                                    <a target="_blank" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">Twitter Bootstrap - 1 (pop-ups)</a> <br>
+                                    <a target="_blank" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">Twitter Bootstrap - 2 (pop-ups)</a> <br>
+                                    <a target="_blank" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">Twitter Bootstrap - 3 (pop-ups)</a> <br>
+                                    <a target="_blank" href="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">jQuery (pop-ups)</a> <br>
+                                    <a target="_blank" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js">Leaflet - 1 (mapa)</a> <br>
+                                    <a target="_blank" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">Leaflet - 2 (mapa)</a> <br>
+                                    <a target="_blank" href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">MathJax (fórmulas)</a> <br>
+                                    <a target="_blank" href="http://code.highcharts.com/highcharts.js">Highcharts (gráficos)</a>
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pp">
+            <!--recorte de página-->
+            <div class="pp-0">
+                <!--pagina recortada-->
+                <div class="autores">
+                    <div class="autor1">
+                        <img id="redonda" src="./img/beatrizoliveira.jpg" alt="Beatriz Oliveira">
+                        <div class="texto">
+                            <div style="font-size: 30px;"> Beatriz Oliveira </div>
+                            <div style="font-size:20px"> beatrizroliveira@ua.pt </div>
+                            <div style="font-size:17px"> 108606 </div>
+                        </div>
+                    </div>
+                    <div class="autor2">
+                        <img id="redonda" src="./img/joaogaspar.jpg" alt="João Gaspar">
+                        <div class="texto">
+                            <div style="font-size: 30px">João Gaspar </div>
+                            <div style="font-size:20px"> j.gaspar@ua.pt </div>
+                            <div style="font-size:17px"> 107708 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mapa">
+                <div id="oMeuMapa" style="width: 100%; height: 400px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/relogio.js"></script>
+    <script type="text/javascript" src="./js/mapa.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/joaog/ISD/P 11-13/simulation/qsim
+Eseqdet1101
+Z1 w1642877452
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 zGMDhP>8e@2k@f0e<PY]k2
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 dc5N=DKXMMTVYdUQ@D3FA2
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
+!i122 14
+R0
+Z10 8SeqDet1101.vho
+Z11 FSeqDet1101.vho
+l0
+Z12 L37 1
+VHk@g?FF=WkNc7[_na0kbB1
+!s100 E>Gm3[6o5bEi`V6Xb[Ef:1
+Z13 OV;C;2020.1;71
+32
+Z14 !s110 1642877453
+!i10b 1
+Z15 !s108 1642877453.000000
+Z16 !s90 -work|work|SeqDet1101.vho|
+Z17 !s107 SeqDet1101.vho|
+!i113 1
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 10 seqdet1101 0 22 Hk@g?FF=WkNc7[_na0kbB1
+!i122 14
+l66
+L45 119
+V2fCG7CSV9I8;gg2m9lDD^3
+!s100 kKZeFhI^jfWK:iT:h40Xo3
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Eseqdet1101_vhd_vec_tst
+Z20 w1642877451
+R7
+R8
+!i122 15
+R0
+Z21 8WaveformSeqDemo1101.vwf.vht
+Z22 FWaveformSeqDemo1101.vwf.vht
+l0
+Z23 L32 1
+Vj7P_=MkiI_ed:nk54VeUa2
+!s100 G3k<NfAYGiz144@`3bJch2
+R13
+32
+R14
+!i10b 1
+R15
+Z24 !s90 -work|work|WaveformSeqDemo1101.vwf.vht|
+Z25 !s107 WaveformSeqDemo1101.vwf.vht|
+!i113 1
+R18
+R19
+Aseqdet1101_arch
+R7
+R8
+DEx4 work 22 seqdet1101_vhd_vec_tst 0 22 j7P_=MkiI_ed:nk54VeUa2
+!i122 15
+l47
+L34 61
+Ve6]^=ae<a@`bLWVgDIUYb0
+!s100 3d`>@idlQ1e9CK9:i;I_Q1
+R13
+32
+R14
+!i10b 1
+R15
+R24
+R25
+!i113 1
+R18
+R19
+Eseqdet3in5
+Z26 w1642895169
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+!i122 18
+Z27 dC:/Users/joaog/ISD/P1113/simulation/qsim
+Z28 8SeqDet3in5.vho
+Z29 FSeqDet3in5.vho
+l0
+R12
+V>ZBFR3o02oM`B4o1?E[;B3
+!s100 IK:1k`hbk<MlR^XKJElgW3
+R13
+32
+Z30 !s110 1642895170
+!i10b 1
+Z31 !s108 1642895170.000000
+Z32 !s90 -work|work|SeqDet3in5.vho|
+Z33 !s107 SeqDet3in5.vho|
+!i113 1
+R18
+R19
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 10 seqdet3in5 0 22 >ZBFR3o02oM`B4o1?E[;B3
+!i122 18
+l69
+L45 168
+VAFgGH`YFCOBa<bUJ<Uzo>0
+!s100 PZmEUT0LegclBGzUgE4[91
+R13
+32
+R30
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R18
+R19
+Eseqdet3in5_vhd_vec_tst
+R26
+R7
+R8
+!i122 19
+R27
+Z34 8Waveform.vwf.vht
+Z35 FWaveform.vwf.vht
+l0
+R23
+Va@j8Io20@a6PA4Xf[IcR72
+!s100 ^ziOh2=Y?8dCkjWgYgZP83
+R13
+32
+Z36 !s110 1642895171
+!i10b 1
+R31
+Z37 !s90 -work|work|Waveform.vwf.vht|
+Z38 !s107 Waveform.vwf.vht|
+!i113 1
+R18
+R19
+Aseqdet3in5_arch
+R7
+R8
+Z39 DEx4 work 22 seqdet3in5_vhd_vec_tst 0 22 a@j8Io20@a6PA4Xf[IcR72
+!i122 19
+l47
+L34 63
+Vn[=jRcMD;0X`f;=coMQ473
+!s100 X]AJGKTGoM2A3WDXzMT;91
+R13
+32
+R36
+!i10b 1
+R31
+R37
+R38
+!i113 1
+R18
+R19

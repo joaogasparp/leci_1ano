@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "xout",
+					"strict" : false
+				},
+				{
+					"name" : "yout",
+					"strict" : false
+				},
+				{
+					"name" : "zout",
+					"strict" : false
+				},
+				{
+					"name" : "xin",
+					"strict" : false
+				},
+				{
+					"name" : "a",
+					"strict" : false
+				},
+				{
+					"name" : "b",
+					"strict" : false
+				},
+				{
+					"name" : "yin",
+					"strict" : false
+				},
+				{
+					"name" : "zin",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

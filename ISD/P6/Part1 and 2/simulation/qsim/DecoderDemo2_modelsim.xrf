@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/joaog/ISD/P6/Part1/Exercise 2 and 3/DecoderDemo2.bdf
+source_file = 1, C:/Users/joaog/ISD/P6/Part1/Exercise 2 and 3/Waveform1.vwf
+source_file = 1, C:/Users/joaog/ISD/P6/Part1/Exercise 2 and 3/decoderdemo.bdf
+design_name = DecoderDemo2
+instance = comp, \y3~output\, y3~output, DecoderDemo2, 1
+instance = comp, \y2~output\, y2~output, DecoderDemo2, 1
+instance = comp, \y1~output\, y1~output, DecoderDemo2, 1
+instance = comp, \y0~output\, y0~output, DecoderDemo2, 1
+instance = comp, \x1~input\, x1~input, DecoderDemo2, 1
+instance = comp, \x0~input\, x0~input, DecoderDemo2, 1
+instance = comp, \e1~input\, e1~input, DecoderDemo2, 1
+instance = comp, \e0~input\, e0~input, DecoderDemo2, 1
+instance = comp, \inst|inst5\, inst|inst5, DecoderDemo2, 1
+instance = comp, \inst|inst8\, inst|inst8, DecoderDemo2, 1
+instance = comp, \inst|inst7\, inst|inst7, DecoderDemo2, 1
+instance = comp, \inst|inst6\, inst|inst6, DecoderDemo2, 1

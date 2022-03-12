@@ -1,0 +1,6 @@
+|GateDemo
+outPort <= inst.DB_MAX_OUTPUT_PORT_TYPE
+inPort0 => AND2_1.IN0
+inPort1 => AND2_1.IN1
+
+

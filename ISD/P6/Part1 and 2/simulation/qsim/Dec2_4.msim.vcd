@@ -1,0 +1,137 @@
+$comment
+	File created using the following command:
+		vcd file Dec2_4.msim.vcd -direction
+$end
+$date
+	Fri Dec 03 19:19:49 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module decoderdemo_vhd_vec_tst $end
+$var wire 1 ! e0 $end
+$var wire 1 " e1 $end
+$var wire 1 # x0 $end
+$var wire 1 $ x1 $end
+$var wire 1 % y0 $end
+$var wire 1 & y1 $end
+$var wire 1 ' y2 $end
+$var wire 1 ( y3 $end
+
+$scope module i1 $end
+$var wire 1 ) gnd $end
+$var wire 1 * vcc $end
+$var wire 1 + unknown $end
+$var wire 1 , devoe $end
+$var wire 1 - devclrn $end
+$var wire 1 . devpor $end
+$var wire 1 / ww_devoe $end
+$var wire 1 0 ww_devclrn $end
+$var wire 1 1 ww_devpor $end
+$var wire 1 2 ww_y3 $end
+$var wire 1 3 ww_x0 $end
+$var wire 1 4 ww_x1 $end
+$var wire 1 5 ww_e0 $end
+$var wire 1 6 ww_e1 $end
+$var wire 1 7 ww_y2 $end
+$var wire 1 8 ww_y1 $end
+$var wire 1 9 ww_y0 $end
+$var wire 1 : \y3~output_o\ $end
+$var wire 1 ; \y2~output_o\ $end
+$var wire 1 < \y1~output_o\ $end
+$var wire 1 = \y0~output_o\ $end
+$var wire 1 > \x1~input_o\ $end
+$var wire 1 ? \x0~input_o\ $end
+$var wire 1 @ \e1~input_o\ $end
+$var wire 1 A \e0~input_o\ $end
+$var wire 1 B \inst5~combout\ $end
+$var wire 1 C \inst8~combout\ $end
+$var wire 1 D \inst7~combout\ $end
+$var wire 1 E \inst6~combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+0$
+1%
+0&
+0'
+0(
+0)
+1*
+x+
+1,
+1-
+1.
+1/
+10
+11
+02
+03
+04
+05
+16
+07
+08
+19
+0:
+0;
+0<
+1=
+0>
+0?
+1@
+0A
+0B
+0C
+0D
+1E
+$end
+#250000
+1#
+13
+1?
+1D
+0E
+0=
+1<
+09
+18
+0%
+1&
+#500000
+0#
+1$
+03
+14
+1>
+0?
+1C
+0D
+0<
+1;
+08
+17
+0&
+1'
+#750000
+1#
+13
+1?
+1B
+0C
+0;
+1:
+07
+12
+0'
+1(
+#1000000

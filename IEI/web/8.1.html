@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <title>Integração de Componentes em Páginas WEB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="grafico-linhas.js"></script>
+    <!-- Highcharts JavaScript -->
+    <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+    <!-- LeaftLet CSS e JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Engenharia Informática</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Tópico A</a></li>
+                    <li><a href="#">Tópico B</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tópico C<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Opção1</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Opção2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Default</a></li>
+                </ul>
+            </div>
+        </nav>
+        <a href="#topicoA">Topico A</a>
+        <h2 id="topicoA">Este é o Tópico A - PopUp</h2>
+        <button class="btn btn-warning" data-toggle="modal" data-target="#oMeuPopup">
+            Lançar popup
+            </button>
+        <div id="oMeuPopup" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Título</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Conteúdo do PopUp</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <a href="#topicoB">Topico B</a>
+        <h2 id="topicoB">Este é o Tópico B - Gráficos</h2>
+        <div id="grafico-linhas" style="width: 400px; height: 300px;"></div>
+        <button class="btn btn-primary" onclick="desenhaGrafico()">Gráfico</button>
+        <h2 id="topicoC1">Este é o Tópico C - Mapas</h2>
+        <br>
+        <div id="oMeuMapa" style="width: 700px; height: 400px"></div>
+        <script type="text/javascript" src="map.js"></script>
+        <span id="coordenadas"></span>
+        <br>
+        <br>
+    </div>
+</body>
+
+</html>

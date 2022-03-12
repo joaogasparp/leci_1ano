@@ -1,0 +1,37 @@
+|EncoderDemo
+A <= PEnc8_3:inst.A
+e_l => PEnc8_3:inst.e_l
+x0 => PEnc8_3:inst.x0
+x1 => PEnc8_3:inst.x1
+x2 => PEnc8_3:inst.x2
+x3 => PEnc8_3:inst.x3
+x4 => PEnc8_3:inst.x4
+x5 => PEnc8_3:inst.x5
+x6 => PEnc8_3:inst.x6
+x7 => PEnc8_3:inst.x7
+B <= PEnc8_3:inst.B
+C <= PEnc8_3:inst.C
+os_l <= PEnc8_3:inst.os_l
+
+
+|EncoderDemo|PEnc8_3:inst
+A <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+e_l => inst.IN0
+x7 => or1.IN0
+x7 => or2.IN0
+x7 => or3.IN0
+x5 => or1.IN1
+x5 => or3.IN3
+x4 => or1.IN2
+x6 => or1.IN3
+x6 => or2.IN3
+B <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+x3 => or2.IN1
+x3 => or3.IN1
+x2 => or2.IN2
+C <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+x1 => or3.IN2
+os_l <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x0 => ~NO_FANOUT~
+
+

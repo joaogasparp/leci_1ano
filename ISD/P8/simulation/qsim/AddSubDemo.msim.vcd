@@ -1,0 +1,150 @@
+$comment
+	File created using the following command:
+		vcd file AddSubDemo.msim.vcd -direction
+$end
+$date
+	Tue Dec 14 15:15:39 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module addsubdemo_vhd_vec_tst $end
+$var wire 1 ! A [3] $end
+$var wire 1 " A [2] $end
+$var wire 1 # A [1] $end
+$var wire 1 $ A [0] $end
+$var wire 1 % ADD_SUB $end
+$var wire 1 & B [3] $end
+$var wire 1 ' B [2] $end
+$var wire 1 ( B [1] $end
+$var wire 1 ) B [0] $end
+$var wire 1 * Co $end
+$var wire 1 + ovf $end
+$var wire 1 , S [3] $end
+$var wire 1 - S [2] $end
+$var wire 1 . S [1] $end
+$var wire 1 / S [0] $end
+
+$scope module i1 $end
+$var wire 1 0 gnd $end
+$var wire 1 1 vcc $end
+$var wire 1 2 unknown $end
+$var wire 1 3 devoe $end
+$var wire 1 4 devclrn $end
+$var wire 1 5 devpor $end
+$var wire 1 6 ww_devoe $end
+$var wire 1 7 ww_devclrn $end
+$var wire 1 8 ww_devpor $end
+$var wire 1 9 ww_Co $end
+$var wire 1 : ww_ADD_SUB $end
+$var wire 1 ; ww_A [3] $end
+$var wire 1 < ww_A [2] $end
+$var wire 1 = ww_A [1] $end
+$var wire 1 > ww_A [0] $end
+$var wire 1 ? ww_B [3] $end
+$var wire 1 @ ww_B [2] $end
+$var wire 1 A ww_B [1] $end
+$var wire 1 B ww_B [0] $end
+$var wire 1 C ww_ovf $end
+$var wire 1 D ww_S [3] $end
+$var wire 1 E ww_S [2] $end
+$var wire 1 F ww_S [1] $end
+$var wire 1 G ww_S [0] $end
+$var wire 1 H \Co~output_o\ $end
+$var wire 1 I \ovf~output_o\ $end
+$var wire 1 J \S[3]~output_o\ $end
+$var wire 1 K \S[2]~output_o\ $end
+$var wire 1 L \S[1]~output_o\ $end
+$var wire 1 M \S[0]~output_o\ $end
+$var wire 1 N \B[3]~input_o\ $end
+$var wire 1 O \ADD_SUB~input_o\ $end
+$var wire 1 P \B[2]~input_o\ $end
+$var wire 1 Q \B[1]~input_o\ $end
+$var wire 1 R \A[0]~input_o\ $end
+$var wire 1 S \B[0]~input_o\ $end
+$var wire 1 T \inst|inst|inst5~0_combout\ $end
+$var wire 1 U \A[1]~input_o\ $end
+$var wire 1 V \inst|inst1|inst5~0_combout\ $end
+$var wire 1 W \A[2]~input_o\ $end
+$var wire 1 X \inst|inst2|inst5~0_combout\ $end
+$var wire 1 Y \A[3]~input_o\ $end
+$var wire 1 Z \inst|inst3|inst5~0_combout\ $end
+$var wire 1 [ \inst|inst99~combout\ $end
+$var wire 1 \ \inst|inst3|inst6~0_combout\ $end
+$var wire 1 ] \inst|inst2|inst6~0_combout\ $end
+$var wire 1 ^ \inst|inst1|inst6~combout\ $end
+$var wire 1 _ \inst|inst|inst6~0_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0%
+0*
+1+
+00
+11
+x2
+13
+14
+15
+16
+17
+18
+09
+0:
+1C
+0H
+1I
+1J
+0K
+0L
+0M
+0N
+0O
+1P
+0Q
+0R
+0S
+0T
+0U
+0V
+1W
+1X
+0Y
+0Z
+1[
+1\
+0]
+0^
+0_
+0!
+1"
+0#
+0$
+0&
+1'
+0(
+0)
+0;
+1<
+0=
+0>
+0?
+1@
+0A
+0B
+1D
+0E
+0F
+0G
+1,
+0-
+0.
+0/
+$end
+#1000000

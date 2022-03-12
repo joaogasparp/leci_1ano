@@ -1,0 +1,35 @@
+h1 {
+    /* estilo para h1 */
+    color: rgb(255, 230, 0);
+    background-color: black;
+}
+
+h2 {
+    /* estilo para h2 */
+    color: rgb(223, 198, 161);
+    background-color: rgb(41, 40, 40);
+}
+
+h3 {
+    /* estilo para h3 */
+    color: rgb(0, 174, 255);
+    background-color: rgb(107, 105, 105);
+}
+
+h4 {
+    /* estilo para h4 */
+    color: rgb(255, 0, 234);
+    background-color: rgb(182, 182, 182);
+}
+
+h5 {
+    /* estilo para h5 */
+    color: rgb(0, 255, 64);
+    background-color: rgb(221, 221, 221);
+}
+
+h6 {
+    /* estilo para h6 */
+    color: rgb(255, 0, 43);
+    background-color: rgb(255, 255, 255);
+}

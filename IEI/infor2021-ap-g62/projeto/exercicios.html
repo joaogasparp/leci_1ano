@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./css/exercicios.css">
+    <title>Mecânica</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="sidebar">
+            <div class="profile">
+                <img src="./img/logo.png" alt="logo">
+                <h3>Mecânica</h3>
+                <p>Dinâmica e Cinemática</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">INÍCIO</a></li>
+                    <!--Introdução-->
+                    <li><a href="./capitulos.html">CAPÍTULOS</a></li>
+                    <li><a href="./exercicios.html">EXERCÍCIOS</a></li>
+                    <li><a href="./about.html">ACERCA</a></li>
+                </ul>
+                <div class="relogio">
+                    <div class="display">00:00:00</div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="pagina">
+
+        <div class="calculadora">
+            <button id="botao1" class="btn btn-warning" data-toggle="modal" data-target="#oMeuPopup"> <img src="./img/exercicios/calculadora.png" alt="Calculadora"></button>
+            <div id="oMeuPopup" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Calculadora</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p><input id="op1" value="2" />
+                                <span id="op-view">+</span>
+                                <input id="op2" value="3" />
+                                <span id="op-view">=</span>
+                                <input id="res" value="" /><br/>
+                                <select id="operacao" onchange="operacao()">
+                                        <option value="+"> Adição </option>
+                                        <option value="-"> Subtração </option>
+                                        <option value="*"> Multiplicação </option>
+                                        <option value="/"> Divisão </option>
+                                </select>
+                                <button id="btn" onclick="calcular()" onmouseover="mover()">Calcular</button></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="questoes">
+            <section>
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        Atenção!
+                    </div>
+                    <div class="panel-body">
+                        Faça os exercícios após a leitura atentada dos capítulos. <br> Poderá ter acesso a uma calculadora (canto inferiror direito).
+                    </div>
+                </div>
+                <div class="questao">
+                    Questão 1 <br> Um ciclista percorreu 300 m para norte, em seguinte 400 m para nordeste e, finalmente, 500 m para este. A distância a que se encontra do ponto de partida no final do percurso, em metros, é:
+                </div>
+                <div class="respostas">
+                    <div class="opcao">
+                        <input type="radio" name="questao1"><span class="math inline">\(\sqrt{(300)^2 + (400)^2 + (500)^2}\)</span>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" name="questao1"><span class="math inline">\(300 + 400 + 500\)</span>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" name="questao1" id="correto1"><span class="math inline">\(\sqrt{(500 + 400 \cos45)^2 + (300 + 400 \sin45)^2}\)</span>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" name="questao1"><span class="math inline">\(\sqrt{500^2 + (400 \cos45)^2 + 300^2 + (400 \sin45)^2}\)</span>
+                    </div>
+                </div>
+                <div class="questao">
+                    Questão 2 <br> Os três primeiros segundos do movimento de um pássaro são descriros pelas seguintes equações:
+                    <p><span class="math display">\[\left\{
+                        \begin{array}{cl}
+                            x &amp; = 2t^2 - 5t \\
+                            y &amp; = t^3 - 3t^2 + 6
+                        \end{array}
+                        \right.\]</span></p>
+                    Qual das expressões traduz, no SI, a velocidade do pássaro em função do tempo?
+                </div>
+                <div class="respostas">
+                    <div class="opcao">
+                        <input type="radio" name="questao2"><span class="math inline">\(\overrightarrow{v}(t)=(4t-5)\overrightarrow{e}_x - (3t^2+6t+6)\overrightarrow{e}_y\)</span>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" name="questao2" id="correto2"><span class="math inline">\(\overrightarrow{v}(t)=(4t-5)\overrightarrow{e}_x + (3t^2-6t)\overrightarrow{e}_y\)</span>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" name="questao2"><span class="math inline">\(\overrightarrow{v}(t)=(2t-5)\overrightarrow{e}_x + (3t-6t)\overrightarrow{e}_y\)</span>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" name="questao2"><span class="math inline">\(\overrightarrow{v}(t)=(2t-5)\overrightarrow{e}_x + (t^2-3t)\overrightarrow{e}_y\)</span>
+                    </div>
+                </div>
+                <div class="questao">
+                    Questão 3 <br> Um automóvel de 1,0t parte do repouso e segue numa estrada circular de raio 100m. Suponha que a rapidez do automóvel aumenta uniformemente até aos 72km/h em 10s. Neste instante os módulos das componentes tangencial e
+                    normal da força resultante são, respetivamente:
+                </div>
+                <div class="respostas">
+                    <div class="opcao">
+                        <input type="radio" name="questao3" id="correto3">2000N e 4000N
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" name="questao3">4000N e 4000N
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" name="questao3">4000N e 2000N
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" name="questao3">1000N e 2000N
+                    </div>
+                </div>
+                <div class="questao">
+                    Questão 4 <br> Nas situações seguintes indique qual é a curva descrita onde é maior o desconforto para o passageiro do automóvel.
+                </div>
+                <div class="respostas">
+                    <div class="opcao">
+                        <input type="radio" name="questao4" id="correto4">O automóvel descreve uma curva com o velocímetro a marcar um certo valor e a seguir outra igual com o velocímetro indicando o dobro.
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" name="questao4">O automóvel descreve duas curvas de raios r1 e r2, com r1>r2, marcando o velocímetro o mesmo valor.
+                    </div>
+                </div>
+                <div class="questao">
+                    Questão 5 <br> Num teste de tiro, um cruzador dispara, simultanemente dois tiros para dois navios, A e B, com velocidades de igual módulo. O navio B está duas vezes mais distante do cruzador do que o navio A. É desprezável a resistência
+                    do ar. Sendo, respetivamente,
+                    <span class="math inline">\(t_A\)</span> e <span class="math inline">\(t_B\)</span> os tempos que as balas demoram até aos navios, A e B, verifica-se que:
+                </div>
+                <div class="respostas">
+                    <div class="opcao">
+                        <input type="radio" name="questao5"><span class="math inline">\(t_A=t_B\)</span>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" name="questao5" id="correto5"><span class="math inline">\(2t_A=t_B\)</span>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" name="questao5"><span class="math inline">\(t_A&gt;t_B\)</span>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" name="questao5"><span class="math inline">\(\sqrt{2} t_A=t_B\)</span>
+                    </div>
+                </div>
+                <footer>
+                    <button class="resultado" onClick="resultado()">Confirmar Respostas</button>
+                </footer>
+            </section>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/exercicios.js"></script>
+    <script type="text/javascript" src="./js/relogio.js"></script>
+    <script type="text/javascript" src="./js/calculadora.js"></script>
+
+</body>
+
+</html>

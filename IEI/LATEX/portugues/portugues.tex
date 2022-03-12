@@ -1,0 +1,50 @@
+\documentclass[a4paper,11pt,openright,oneside]{report}
+\usepackage[portuguese]{babel}
+
+\begin{document}
+
+\renewcommand{\partname}{Parte}
+\renewcommand{\chaptername}{Tema}
+\renewcommand{\contentsname}{Índice}
+
+\tableofcontents
+\part{}
+\chapter{}
+
+Tudo o que um sonho precisa para ser realizado é alguém que acredite que ele possa ser realizado. O contrário do pessimismo raramente é o otimismo. O contrário do pessimismo, se não é a boa intenção de injetar força nos fracos, o que é bonito e faz bem, é quase sempre a idiota.
+
+\begin{itemize}
+\item[+] este é um item;
+\item[+] este é outro item;
+\item[+] etc.
+\end{itemize}
+
+\begin{description}
+\item[UA] - Univ. de Aveiro;
+\item[UC] - Univ. de Coimbra;
+\item[UP] - Univ. do Porto.
+\end{description}
+
+\renewcommand{\theenumi}{\Roman{enumi}}
+\begin{enumerate}
+\item este é um item;
+\item este é outro item;
+\item etc.
+\end{enumerate}
+
+\renewcommand{\theenumi}{\Roman{enumi}}
+\begin{enumerate}
+\item Este é um item, com subitemas:
+\renewcommand{\theenumi}{\alpha{enumi}}
+\begin{enumerate}
+\item Este é um item;
+\item Este é outro item;
+\item etc.
+\end{enumerate}
+\renewcommand{\theenumi}{\Roman{enumi}}
+\item Este é outro item;
+\item etc.
+\end{enumerate}
+
+
+\end{document}

@@ -1,0 +1,15 @@
+#
+
+def inputTotal():
+	tot = 0
+	while True:
+		s = 
+		
+
+
+
+def main():
+	total = inputTotal()
+
+
+main()

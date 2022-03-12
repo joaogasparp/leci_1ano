@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/joaog/ISD/P8/Part2/Cmp1bit.bdf
+source_file = 1, C:/Users/joaog/ISD/P8/Part2/Waveform.vwf
+source_file = 1, C:/Users/joaog/ISD/P8/Part2/db/CmpDemo.cbx.xml
+design_name = Cmp1bit
+instance = comp, \xout~output\, xout~output, Cmp1bit, 1
+instance = comp, \yout~output\, yout~output, Cmp1bit, 1
+instance = comp, \zout~output\, zout~output, Cmp1bit, 1
+instance = comp, \xin~input\, xin~input, Cmp1bit, 1
+instance = comp, \a~input\, a~input, Cmp1bit, 1
+instance = comp, \b~input\, b~input, Cmp1bit, 1
+instance = comp, \inst52~0\, inst52~0, Cmp1bit, 1
+instance = comp, \yin~input\, yin~input, Cmp1bit, 1
+instance = comp, \zin~input\, zin~input, Cmp1bit, 1
+instance = comp, \inst12~0\, inst12~0, Cmp1bit, 1

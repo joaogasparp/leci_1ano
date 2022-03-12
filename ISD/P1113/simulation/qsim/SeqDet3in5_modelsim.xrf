@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/joaog/ISD/P1113/seqdet3in5.bdf
+design_name = SeqDet3in5
+instance = comp, \Y~output\, Y~output, SeqDet3in5, 1
+instance = comp, \X~input\, X~input, SeqDet3in5, 1
+instance = comp, \CLK~input\, CLK~input, SeqDet3in5, 1
+instance = comp, \inst12~0\, inst12~0, SeqDet3in5, 1
+instance = comp, \inst91~0\, inst91~0, SeqDet3in5, 1
+instance = comp, \inst3~0\, inst3~0, SeqDet3in5, 1

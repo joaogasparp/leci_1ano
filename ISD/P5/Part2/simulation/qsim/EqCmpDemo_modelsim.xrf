@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/joaog/ISD/P5/Part2/EqCmpDemo.bdf
+source_file = 1, C:/Users/joaog/ISD/P5/Part2/Waveform.vwf
+source_file = 1, C:/Users/joaog/ISD/P5/Part2/EqCmpDemo2.bdf
+source_file = 1, C:/Users/joaog/ISD/P5/Part2/db/EqCmpDemo.cbx.xml
+design_name = EqCmpDemo2
+instance = comp, \cmpOut~output\, cmpOut~output, EqCmpDemo2, 1
+instance = comp, \input0~input\, input0~input, EqCmpDemo2, 1
+instance = comp, \input1~input\, input1~input, EqCmpDemo2, 1
+instance = comp, \inst|and_1~0\, inst|and_1~0, EqCmpDemo2, 1

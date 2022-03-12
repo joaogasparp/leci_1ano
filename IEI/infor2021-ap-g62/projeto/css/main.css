@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap%27');
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+body {
+    background: white;
+}
+
+
+/*Menu*/
+
+.wrapper .sidebar {
+    background-image: url("../img/sideback.jpg");
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 18.9%;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile img {
+    display: block;
+    height: 4.125rem;
+    max-width: 8.125rem;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.wrapper .sidebar .profile {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile h3 {
+    color: white;
+    margin: 20px 0 5px;
+    font-size: 25px;
+}
+
+.wrapper .sidebar .profile p {
+    color: white;
+    font-size: 15px;
+}
+
+.menu {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 50%;
+}
+
+.menu ul li {
+    margin-bottom: 20px;
+}
+
+.menu ul li:hover {
+    border-right: 2px solid #f8a73e;
+    transition: color o.3s;
+}
+
+.menu ul li a {
+    color: #dbdbdb;
+    font-size: 14px;
+    letter-spacing: .0625rem;
+}
+
+.menu ul li a:hover {
+    color: #f8a73e;
+    transition: color 0.3s;
+}
+
+.pp {
+    overflow: visible;
+    margin-left: 18.9%;
+    width: calc(100% - 18.9%);
+    height: 100%;
+}
+
+.pp .pp-0 {
+    height: 100%;
+}
+
+.pp .pp-1 {
+    height: 350px;
+}
+
+.pp .pp-0 .pp-1 .imagem {
+    position: relative;
+    width: 100%;
+}
+
+.pp .pp-0 .pp-1 img {
+    height: 350px;
+    width: 100%;
+}
+
+.pp .pp-0 .pp-1 h2 {
+    position: absolute;
+    top: 95px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+}
+
+.pp .pp-2 {
+    width: 100%;
+}
+
+.pp .pp-2 .pergunta {
+    margin-left: 140px;
+    margin-top: 76px;
+    font-size: 32px;
+}
+
+.pp .pp-2 .introducao {
+    margin-top: 15px;
+    margin-left: 140px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 140px;
+    line-height: 27px;
+    text-align: justify;
+}
+
+.relogio {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.relogio .display {
+    background-color: #daa2084f;
+    padding: 7%;
+    text-align: center;
+    border-radius: 10px;
+    font-family: monospace;
+    color: white;
+}

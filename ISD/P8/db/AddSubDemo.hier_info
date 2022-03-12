@@ -1,0 +1,96 @@
+|AddSubDemo
+Co <= AddSub4:inst.Co
+ADD_SUB => AddSub4:inst.ADD_SUB
+A[0] => AddSub4:inst.A[0]
+A[1] => AddSub4:inst.A[1]
+A[2] => AddSub4:inst.A[2]
+A[3] => AddSub4:inst.A[3]
+B[0] => AddSub4:inst.B[0]
+B[1] => AddSub4:inst.B[1]
+B[2] => AddSub4:inst.B[2]
+B[3] => AddSub4:inst.B[3]
+ovf <= AddSub4:inst.ovf
+S[0] <= AddSub4:inst.S[0]
+S[1] <= AddSub4:inst.S[1]
+S[2] <= AddSub4:inst.S[2]
+S[3] <= AddSub4:inst.S[3]
+
+
+|AddSubDemo|AddSub4:inst
+Co <= FullAdder:inst3.Co
+A[0] => FullAdder:inst.a
+A[1] => FullAdder:inst1.a
+A[2] => FullAdder:inst2.a
+A[3] => FullAdder:inst3.a
+B[0] => inst4.IN0
+B[1] => inst56.IN0
+B[2] => inst6.IN0
+B[3] => inst7.IN0
+ADD_SUB => inst7.IN1
+ADD_SUB => inst6.IN1
+ADD_SUB => inst56.IN1
+ADD_SUB => inst4.IN1
+ADD_SUB => FullAdder:inst.ci
+ovf <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+S[0] <= FullAdder:inst.S
+S[1] <= FullAdder:inst1.S
+S[2] <= FullAdder:inst2.S
+S[3] <= FullAdder:inst3.S
+
+
+|AddSubDemo|AddSub4:inst|FullAdder:inst3
+S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst4.IN1
+a => inst2.IN0
+b => inst.IN1
+b => inst3.IN1
+b => inst2.IN1
+ci => inst6.IN1
+ci => inst3.IN0
+ci => inst4.IN0
+Co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSubDemo|AddSub4:inst|FullAdder:inst2
+S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst4.IN1
+a => inst2.IN0
+b => inst.IN1
+b => inst3.IN1
+b => inst2.IN1
+ci => inst6.IN1
+ci => inst3.IN0
+ci => inst4.IN0
+Co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSubDemo|AddSub4:inst|FullAdder:inst1
+S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst4.IN1
+a => inst2.IN0
+b => inst.IN1
+b => inst3.IN1
+b => inst2.IN1
+ci => inst6.IN1
+ci => inst3.IN0
+ci => inst4.IN0
+Co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AddSubDemo|AddSub4:inst|FullAdder:inst
+S <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst4.IN1
+a => inst2.IN0
+b => inst.IN1
+b => inst3.IN1
+b => inst2.IN1
+ci => inst6.IN1
+ci => inst3.IN0
+ci => inst4.IN0
+Co <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+

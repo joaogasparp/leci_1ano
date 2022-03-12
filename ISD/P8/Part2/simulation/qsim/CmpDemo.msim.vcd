@@ -1,0 +1,135 @@
+$comment
+	File created using the following command:
+		vcd file CmpDemo.msim.vcd -direction
+$end
+$date
+	Tue Dec 14 19:47:18 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module cmp1bit_vhd_vec_tst $end
+$var wire 1 ! a $end
+$var wire 1 " b $end
+$var wire 1 # xin $end
+$var wire 1 $ xout $end
+$var wire 1 % yin $end
+$var wire 1 & yout $end
+$var wire 1 ' zin $end
+$var wire 1 ( zout $end
+
+$scope module i1 $end
+$var wire 1 ) gnd $end
+$var wire 1 * vcc $end
+$var wire 1 + unknown $end
+$var wire 1 , devoe $end
+$var wire 1 - devclrn $end
+$var wire 1 . devpor $end
+$var wire 1 / ww_devoe $end
+$var wire 1 0 ww_devclrn $end
+$var wire 1 1 ww_devpor $end
+$var wire 1 2 ww_xout $end
+$var wire 1 3 ww_xin $end
+$var wire 1 4 ww_b $end
+$var wire 1 5 ww_a $end
+$var wire 1 6 ww_yout $end
+$var wire 1 7 ww_yin $end
+$var wire 1 8 ww_zout $end
+$var wire 1 9 ww_zin $end
+$var wire 1 : \xout~output_o\ $end
+$var wire 1 ; \yout~output_o\ $end
+$var wire 1 < \zout~output_o\ $end
+$var wire 1 = \xin~input_o\ $end
+$var wire 1 > \a~input_o\ $end
+$var wire 1 ? \b~input_o\ $end
+$var wire 1 @ \inst52~0_combout\ $end
+$var wire 1 A \yin~input_o\ $end
+$var wire 1 B \inst99~combout\ $end
+$var wire 1 C \zin~input_o\ $end
+$var wire 1 D \inst12~0_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+1#
+1$
+1%
+1&
+1'
+1(
+0)
+1*
+x+
+1,
+1-
+1.
+1/
+10
+11
+12
+13
+04
+05
+16
+17
+18
+19
+1:
+1;
+1<
+1=
+0>
+0?
+1@
+1A
+1B
+1C
+1D
+$end
+#250000
+1"
+14
+1?
+0@
+0B
+0;
+0:
+06
+02
+0&
+0$
+#500000
+0"
+1!
+04
+15
+1>
+0?
+1@
+0D
+0<
+1:
+08
+12
+0(
+1$
+#750000
+1"
+14
+1?
+1B
+1D
+1<
+1;
+18
+16
+1(
+1&
+#1000000

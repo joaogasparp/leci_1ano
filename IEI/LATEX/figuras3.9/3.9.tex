@@ -1,0 +1,26 @@
+\documentclass[a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath { {./imagens} }
+\usepackage{hyperref}
+
+\begin{document}
+
+Este
+\includegraphics[height=24pt]{ua}
+é o novo logotipo da UA
+
+\begin{figure}[h]
+\center % Centra as imagens
+a) \includegraphics{ua}
+b) \includegraphics[height=3cm]{ua}
+c) \includegraphics[width=20mm]{ua}
+d) \includegraphics[scale=.5,angle=90]{ua}
+e) \includegraphics[height=5mm,width=3cm]{ua}
+\caption{Logotipo da Universidade de Aveiro: a) na dimensão real, b) com 3cm de altura, c) com 20mm de largura, d) com altura e largura reduzidas a $1/2$ e simultaneamente rodado 90º e e) com uma modificação anamórfica da altura e da largura.}
+\label{fig:ualogo.2}
+\end{figure}
+
+\ref{fig:ualogo.2}
+
+\end{document}

@@ -1,0 +1,40 @@
+#
+
+def inputFloatList():
+	lst = []
+	while True:
+		lista = input('Número:')
+		if lista == '':
+			break
+		n = int(lista)
+		lst.append(n)
+	return lst
+
+def countLower(lst,v):
+	c = 0
+	for i in lst: 
+		if i < v: c += 1
+	return c
+
+lst = inputFloatList()
+
+v = int(input('Digite um valor qualquer.'))
+
+c = countLower(lst,v)
+
+def minmax(lst):
+	lst.sort()
+	n = lst[0]
+	x = lst[-1]
+	return x,n
+	
+def mc(lst):
+	x,n = minmax(lst)
+	m = (x+n)/2
+	c = 0
+	for i in lst: 
+		if i < m: c += 1 	
+	return m,c
+	
+minmax(lst)
+mc(lst)

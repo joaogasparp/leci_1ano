@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap%27');
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+body {
+    background: white;
+}
+
+.wrapper .sidebar {
+    background-image: url("../img/sideback.jpg");
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: 'Playfair Display', serif;
+    width: 18.9%;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile img {
+    display: block;
+    height: 4.125rem;
+    max-width: 8.125rem;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.wrapper .sidebar .profile {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile h3 {
+    color: white;
+    margin: 20px 0 5px;
+    font-size: 25px;
+}
+
+.wrapper .sidebar .profile p {
+    color: white;
+    font-size: 15px;
+}
+
+.menu {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 50%;
+}
+
+.menu ul li {
+    margin-bottom: 20px;
+}
+
+.menu ul li:hover {
+    border-right: 2px solid #f8a73e;
+    transition: color o.3s;
+}
+
+.menu ul li a {
+    color: #dbdbdb;
+    font-size: 14px;
+    letter-spacing: .0625rem;
+}
+
+.menu ul li a:hover {
+    color: #f8a73e;
+    transition: color 0.3s;
+}
+
+.uabar {
+    width: 20%;
+    margin-top: 10%;
+    padding: 30px;
+    float: right;
+    border-radius: 5px;
+    background: whitesmoke;
+    border-style: dashed;
+    border-color: black;
+}
+
+.pp {
+    overflow: visible;
+    margin-left: 18.9%;
+    width: calc(100% - 18.9%);
+    height: 100%;
+}
+
+.pp .pp-0 {
+    height: 100%;
+}
+
+#redonda {
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+.autores {
+    padding: 10%;
+}
+
+.autor1 {
+    margin-bottom: 4%;
+    width: 80%;
+}
+
+.autor2 {
+    width: 80%;
+}
+
+img,
+.texto {
+    display: inline-block;
+}
+
+.texto {
+    padding: 0 10%;
+}
+
+.mapa {
+    border-top: 4px solid black;
+}
+
+.relogio {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.relogio .display {
+    background-color: #daa2084f;
+    padding: 7%;
+    text-align: center;
+    border-radius: 10px;
+    font-family: monospace;
+    color: white;
+}

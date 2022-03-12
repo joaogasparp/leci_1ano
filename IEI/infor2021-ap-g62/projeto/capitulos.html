@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./css/capitulos.css">
+    <title>Mecânica</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--Gráficos-->
+    <script type="text/javascript" src="./js/grafico-linhas.js"></script>
+    <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="sidebar">
+            <div class="profile">
+                <img src="./img/logo.png" alt="logo">
+                <h3>Mecânica</h3>
+                <p>Dinâmica e Cinemática</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">INÍCIO</a></li>
+                    <!--Introdução-->
+                    <li><a href="./capitulos.html">CAPÍTULOS</a></li>
+                    <li><a href="./exercicios.html">EXERCÍCIOS</a></li>
+                    <li><a href="./about.html">ACERCA</a></li>
+                </ul>
+                <div class="relogio">
+                    <div class="display">00:00:00</div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="pp">
+            <!--recorte de página-->
+            <div class="pp-0">
+                <!--pagina recortada-->
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">CAPÍTULOS</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#cap1">I</a></li>
+                            <li><a href="#cap2">II</a></li>
+                            <li><a href="#cap3">III</a></li>
+                            <li><a href="#cap4">IV</a></li>
+                            <li><a href="#cap5">V</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="capitulos">
+                    <div class="nomes">
+                        <div class="nomes2">
+                            <a href="#cap1" style="color: black;">I - Posição, equações paramétricas do movimento e trajetória</a>
+                            <hr style="height:1px; border-width:0; color:#f8a73e; background-color:#f8a73e; width:13%; text-align: left;">
+                            <br>
+                            <a href="#cap2" style="color: black;">II - Deslocamento, velocidade média, velocidade e aceleração</a>
+                            <hr style="height:1px; border-width:0; color:#f8a73e; background-color:#f8a73e; width:13%; text-align: left; ">
+                            <br>
+                            <a href="#cap3" style="color: black;">III - Componentes tangencial e normal da aceleração</a>
+                            <hr style="height:1px; border-width:0; color:#f8a73e; background-color:#f8a73e; width:13%; text-align: left; ">
+                            <br>
+                            <a href="#cap4" style="color: black;">IV - Movimentos sob a ação de uma força resultante constante</a>
+                            <hr style="height:1px; border-width:0; color:#f8a73e; background-color:#f8a73e; width:13%; text-align: left; ">
+                            <br>
+                            <a href="#cap5" style="color: black;">V - Movimentos de corpos sujeitos a ligações</a>
+                            <hr style="height:1px; border-width:0; color:#f8a73e; background-color:#f8a73e; width:13%; text-align: left;">
+                        </div>
+                    </div>
+                    <div class="texto">
+                        <br><br>
+                        <section id="cap1">
+                            <div class="cap1">
+                                <br><br>
+                                <h2>Posição, equações paramétricas do movimento e trajetória</h2> <br> A <b>trajetória</b> do centro de massa de um corpo pode ser retilínea ou curvilínea. Se a trajetória for retílinea, basta um único eixo cartesiano para
+                                caracterizar o movimento. Desta forma aplica-se agora essa descrição para movimentos curvilíneos no plano e no espaço.<br><br> A <b>posição</b> de uma partícula depende do referencial no qual o movimento é representado,
+                                e pode ser retratada por um vetor, de símbolo <span class="math inline">\(\vec{r}\)</span>, que é originário na origem do referencial e a sua extremidade sobre a partícula.
+                                <br><br>Num movimento retilíneo, como o de um corpo que desliza numa superfície plana com barreiras e que está num ponto <b>P</b> de coordenadas <i>x</i> (Figura 1), a posição do centro de massa pode escrever-se como
+                                <span class="math inline">\(\vec{r} = \textit{x} \times \vec{e_x}\)</span>, sendo <span class="math inline">\(\vec{e_x}\)</span> o vetor unitário cuja direção é a do eixo dos <i>xx</i>, apontando no sentido positivo desse
+                                eixo.
+                                <br><br>
+                                <figure>
+                                    <img onclick="clique(this)" alt="Movimento retilíneo de um corpo" src="./img/capitulos/figura1.png" title="Figura 1" style="display: block; margin-left: auto; margin-right: auto">
+                                    <figcaption style="text-align: center;">Figura 1: Movimento retilíneo de um corpo.
+                                        <p>(clique nas imagens para as ampliar)</p>
+                                    </figcaption>
+                                </figure>
+                                <br><br> Se o movimento descrito for curvilíneo como o do centro de massa de um carro a percorrer uma rotunda (Figura 2), para descrever a sua posição serão necessárias duas coordenadas, <i>x</i> e <i>y</i>. Definem-se
+                                os vetores unitários,
+                                <span class="math inline">\(\vec{e_x}\)</span> e <span class="math inline">\(\vec{e_y}\)</span>, decompondo-se o vetor <span class="math inline">\(\vec{r}\)</span> nestes eixos: <span class="math inline">\(\vec{r} = \textit{x} \times \vec{e_x} + \textit{y} \times \vec{e_y}\)</span>.
+                                <br><br>
+                                <figure>
+                                    <img onclick="clique(this)" alt="Movimento curvilíneo de um corpo" src="./img/capitulos/figura2.png" title="Figura 2" style="display: block; margin-left: auto; margin-right: auto">
+                                    <figcaption style="text-align: center;">Figura 2: Movimento curvilíneo de um corpo.</figcaption>
+                                </figure>
+                                <br><br> O movimento curvilíneo a três dimensões (Figura 3), é um movimento mais complexo uma vez que são necessárias três coordenadas, <i>x</i>, <i>y</i> e <i>z</i>, sendo o vetor posição dado por <span class="math inline">\(\vec{r} = \textit{x} \times \vec{e_x} + \textit{y} \times \vec{e_y} + \textit{z} \times \vec{e_z}\)</span>.
+                                <br><br>
+                                <figure>
+                                    <img onclick="clique(this)" alt="Movimento curvilíneo a três dimensões de um corpo" src="./img/capitulos/figura3.png" title="Figura 3" style="display: block; margin-left: auto; margin-right: auto; max-width: 325px;">
+                                    <figcaption style="text-align: center;">Figura 3: Movimento curvilíneo a três dimensões de um corpo.</figcaption>
+                                </figure>
+                                <br><br> As três equações referidas anteriormente, que indicam a variação de cada coordenada com o tempo, podem ser designadas por <b>equações escalares</b> ou <b>paramétricas do movimento</b>. <br><br> A localização da
+                                partícula ao longo do tempo, também designada por <b>lei do movimento</b>, pode então ser representada por
+                                <p><span class="math display">\[\vec{r}(t) = x(t)\vec{e_x} + y(t)\vec{e_y} + z(t)\vec{e_z}\]</span></p> O módulo de um vetor escreve-se <span class="math inline">\(| \vec{r}\vert\)</span>. <br><br>
+                                <div class="centro"> Pode-se resumir então as características do vetor posição: <br><br>
+                                    <hr style="height:1px; border-width:0; color:#000000; background-color:#000000; width:50%;"> Posição, <span class="math inline">\(\vec{r}\)</span>: <br><br>
+                                </div>
+                                <ul>
+                                    <li>- Vetor com origem na origem do referencial e extremidade na partícula; depende do referencial em que é defenido.</li>
+
+                                    <li>- A sua expresão vetorial (designada por lei do movimento) é dada por:
+                                        <p style="margin-left: 30px;"><span class="math inline">\(\vec{r}(t) = x(t)\vec{e_x}\)</span>, num movimento retilíneo;</p>
+                                        <p style="margin-left: 30px;"><span class="math inline">\(\vec{r}(t) = x(t)\vec{e_x} + y(t)\vec{e_y}\)</span>, num movimento curvilíneo no plano;</p>
+                                        <p style="margin-left: 30px;"><span class="math inline">\(\vec{r}(t) = x(t)\vec{e_x} +
+                                            y(t)\vec{e_y} + z(t)\vec{e_z}\)</span>, num movimento curvilíneo no espaço.</p>
+                                    </li>
+
+                                    <li>
+                                        - As sua projeções escalares, <i>x</i>, <i>y</i> e <i>z</i>, podem diferenciar com o decorrer do tempo, tomando valores positivos, negativos ou nulos, sendo as funções
+                                        <p><span class="math display">\[x = x(t), y = y(t), z = z(t)\]</span></p> designadas por <b>equações paramétricas do movimento</b>.
+                                    </li>
+
+                                    <li>
+                                        - O seu módulo (positivo) é dado por
+                                        <p><span class="math display">\[r = | \vec{r}\vert = \sqrt{x^2 + y^2 + z^2}\]</span></p> e indica a distância da partícula à origem do referencial.
+                                    </li>
+                                </ul>
+                                <br>
+                                <div class="centro">
+                                    <hr style="height:1px; border-width:0; color:#000000; background-color:#000000; width:50%;">
+                                </div>
+                                <br> Qualquer <b>movimento curvilíneo</b> pode ser descrito numa formação de movimentos retilíneos em dois eixos (movimento num plano) ou em três eixos (movimento no espaço). <br><br> Pode-se exemplificar com o movimento
+                                do centro de massa de uma bola lançada a partir de uma mesa horizontalmente em queda livre. Este movimento curvilíneo, que se realiza num plano, pode ser visto como a composição de um movimento segundo dois eixos (um eixo
+                                horizontal e um eixo vertical). <br><br>
+                                <figure>
+                                    <img onclick="clique(this)" alt="Lançamento horizontal de uma bola" src="./img/capitulos/figura4.png" title="Figura 4" style="display: block; margin-left: auto; margin-right: auto; max-width: 325px;">
+                                    <figcaption style="text-align: center;">Figura 4: Lançamento horizontal de uma bola.</figcaption>
+                                </figure>
+                                <br><br> A representação estroboscópica no gráfico <i>y(x)</i> permite analisar o movimento nos dois eixos e caracterizar o movimento em cada eixo como uniforme, acelerado ou retardado, equiparando as distâncias percorridas
+                                entre posições sucessivas em intervalos de tempo iguais. Os movimentos em cada eixo são descritos pelas respetivas equações paramétricas, sendo possível representá-los em gráficos posição-tempo (Figura 5, Gráfico 1 e 2).
+                                <br><br>
+                                <div class="centro">
+                                    <figure>
+                                        <img onclick="clique(this)" alt="Representação estroboscópica do movimento e sua decomposição em dois movimentos" src="./img/capitulos/figura5.jpg " title="Figura 5 " style="max-height: 200px; ">
+                                        <figcaption style="text-align: center; font-family: 'Montserrat', sans-serif; max-width: 70%; text-align: justify;">Figura 5: Representação estroboscópica do movimento e sua decomposição em dois movimentos.
+                                        </figcaption>
+                                    </figure>
+                                    <div id="grafico-linhas1" style="width: 400px; height: 300px;"></div>
+                                    <p style="text-align: left;">Gráfico 1: Movimento uniforme no eixo horizontal.</p>
+                                    <div id="grafico-linhas2" style="width: 400px; height: 300px;"></div>
+                                    <p style="text-align: left;">Gráfico 2: Movimento uniformemente acelerado.</p>
+                                    <button class="btn btn-warning" onclick="desenhaGrafico()">Grafico de Linhas</button>
+                                </div>
+                                <br><br> A forma das equações paramétricas dos movimentos retilíneos em cada eixo permite a sua definição, como se descreve: <br><br>
+                                <div class="centro">
+                                    <table class="tg" style="max-width: 75%;">
+                                        <thead>
+                                            <tr>
+                                                <th id="cor" class="tg-0pky" colspan="2" style="text-align: center;">Equações paramétricas</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="tg-0pky">Movimento uniforme (aceleração nula)</td>
+                                                <td class="tg-0pky">A coordenada de posição é uma função polinomial do 1º grau em t. Exemplo: <span class="math inline">\(x (t) = 5-10t\)</span>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tg-0pky">Movimento uniformemente variado (aceleração constante)</td>
+                                                <td class="tg-0pky">A coordenada de posição é uma função polinomial do 2º grau em t. Exemplo: <span class="math inline">\(y (t) = -2+10t-5t^2\)</span>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tg-0pky">Movimento variado (aceleração variável)</td>
+                                                <td class="tg-0pky">A coordenada de posição é uma função polinomial de grau superior a 2 em t. Exemplo: <span class="math inline">\(z (t) = 2-10^3\)</span>.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <br>A <b>equação da trajetória</b> de uma partícula obtém-se a partir das equações paramétricas do movimento por remoção do parâmetro t. <br><br> No exemplo da Figura 5, Gráfico 1 e 2, se as equações paramétricas forem
+                                <span class="math inline">\(x(t) = 10t\)</span> e <span class="math inline">\(y(t) = 5-5t^2\)</span>, removendo o parâmetro <i>t</i> na equação <span class="math inline">\(x(t)\)</span> e trocando-o na equação <span class="math inline">\(y(t)\)</span>                                resultará
+                                <span class="math inline">\(5-5(\frac{x}{10} )^2\)</span>, o que determina que a trajetória é uma parábola. <br><br> Como o resultado anterior é universal, conclui-se que se as equações paramétricas de um movimento forem
+                                uma do primeiro grau e outra do segundo grau, a trajetória será uma parábola.
+                                <br><br>
+                            </div>
+                        </section>
+                        <hr style="height:3px; border-width:0; color:#f8a73e; background-color:#f8a73e; width:100%; text-align: left;">
+                        <section id="cap2">
+                            <div class="cap1">
+                                <br><br>
+                                <h2>Deslocamento, velocidade média, velocidade e aceleração</h2> <br> O <b>deslocamento</b> de uma partícula, <span class="math inline">\(\bigtriangleup\overrightarrow{r}\)</span> , relata a variação da sua posição num dado
+                                intervalo de tempo. Se ela se mover de uma posição <b>A</b> para uma posição <b>B</b>, o deslocamento será um vetor com origem em <b>A</b> e extremidade em <b>B</b>. Se traçarmos os vetores posição de <b>A</b>, <span class="math inline">\(\overrightarrow{r_A}\)</span>,
+                                e de <b>B</b>, <span class="math inline">\(\overrightarrow{r_B}\)</span>, de acordo com a regra da soma de vetores podemos escrever <span class="math inline">\(\overrightarrow{r_B}=\overrightarrow{r_A}+\bigtriangleup\overrightarrow{r}\)</span>.
+                                <p><span class="math display">\[\Leftrightarrow\bigtriangleup\overrightarrow{r}=\overrightarrow{r_B}-\overrightarrow{r_A}\]</span></p>
+                                Na Figura 8 podemos ver que o <b>módulo do vetor, <span class="math inline">\(\bigtriangleup\overrightarrow{r}\)</span> não é igual à distância percorrida sobre a trajetória</b>, <b>s</b>, entre A e B dada pelo comprimento
+                                do arco AB. Apenas quando a trajetória é retilínea e não há inversão de sentido do movimento é que o módulo do deslocamento coincide com a distância percorrida.
+                                <figure>
+                                    <img onclick="clique(this)" alt="Trajetória de uma partícula e vetores posição" src="./img/capitulos/figura8.jpg" title="Figura 8" style="display: block; margin-left: auto; margin-right: auto; max-width: 325px;">
+                                    <figcaption style="text-align: center;">Figura 8: Trajetória de uma partícula e vetores posição.<span class="math inline">\(\overrightarrow{r_A}\)</span> e <span class="math inline">\(\overrightarrow{r_B}\)</span>, vetor deslocamento, <span class="math inline">\(\bigtriangleup\overrightarrow{r}\)</span>,
+                                        e distância percorrida sobre a trajetória, <span class="math inline">\(s\)</span>.
+                                    </figcaption>
+                                </figure>
+                                <br><br>A velocidade média de uma partícula, <span class="math inline">\(\overrightarrow{v_m}\)</span> é o quociente entre o seu deslocamento entre duas posições e o correspondente intervalo de tempo:
+                                <p><span class="math display">\[\overrightarrow{v_m}=\frac{\bigtriangleup\overrightarrow{r}}{\bigtriangleup{t}}\]</span></p>
+                                A velocidade média indica se a partícula muda mais ou menos rapidamente de posição num dado intervalo de tempo. Como <b><span class="math inline">\(\bigtriangleup t\)</span> tem sempre um
+                                valor positivo</b>, a direção e o sentido da velocidade média são as do vetor deslocamento. Quando o ponto B se aproxima tanto de A que praticamente coincide com ele (<span class="math inline">\(\bigtriangleup t\)</span>                                é praticamente zero) a velocidade média "transforma-se" em
+                                <b>velocidade instantânea</b> ou, simplesmente, <b>velocidade</b>. A fórmula matemática da velocidade é:
+                                <p><span class="math display">\[\overrightarrow{v}=\lim_{\bigtriangleup{t} \to 0}   \frac{\bigtriangleup\overrightarrow{r}}{\bigtriangleup{t}}\]</span></p>
+                                que é equivalente a:
+                                <p><span class="math display">\[\overrightarrow{v}=\frac{d\overrightarrow{r}}{d t}\]</span></p>
+                                Ou seja, a velocidade é a derivada temporal do vetor posição (a derivada de uma função <span class="math inline">\(f(t)\)</span>, em ordem à variável <i>t</i>, representa-se por
+                                <span class="math inline">\(f'(t)\)</span>).
+                                <br><br> De acordo com as regras de derivação (soma e produto), e já que os vetores são unitários <span class="math inline">\(\overrightarrow{e_x}\)</span>, <span class="math inline">\(\overrightarrow{e_y}\)</span> e
+                                <span class="math inline">\(\overrightarrow{e_z}\)</span> são constantes no tempo, a derivada da posição num referencial cartesiano <span class="math inline">\(\overrightarrow{r}(t)=x(t)\overrightarrow{e_x}+y(t)\overrightarrow{e_y}+z(t)\overrightarrow{e_z}\)</span>,
+                                é representada por:
+                                <p><span class="math display">\[\overrightarrow{v}=\frac{d\overrightarrow{r}}{d t}=\frac{d x}{d t} \overrightarrow{e_x}+\frac{dy}{d t} \overrightarrow{e_y}+\frac{d z}{d t}\overrightarrow{e_z}\]</span></p>
+                                Por isso, a velocidade é uma função do tempo e escreve-se na forma:
+                                <p><span class="math display">\[\overrightarrow{v}(t)=v_x\overrightarrow{e_x}+v_y \overrightarrow{e_y}+v_z\overrightarrow{e_z}\]</span></p>
+                                Com as componentes escalares da velocidade dadas por:
+                                <p><span class="math display">\[v_x=\frac{d x}{d t} \qquad v_y=\frac{dy}{d t} \qquad v_z=\frac{d z}{d t}\]</span></p>
+                                A <b>aceleração média</b> num dado intervalo de tempo é o quociente entre a variação de velocidade e o respetivo intervalo de tempo:
+                                <p><span class="math display">\[\overrightarrow{a_m}=\frac{\bigtriangleup\overrightarrow{v}}{\bigtriangleup{t}}\]</span></p>
+                                A direção e o sentido de <span class="math inline">\(\overrightarrow{a_m}\)</span> são os mesmos que os de <span class="math inline">\(\bigtriangleup\overrightarrow{v}\)</span>, pois <span class="math inline">\(\bigtriangleup t\)</span>                                é sempre <b>positivo</b>. Para conhecer a aceleração num dado instante, procede-se da mesma forma que na determinação da velocidade instantânea: parte-se da definição de aceleração média e considera-se o ponto <b>B tão próximo
+                                quanto possível de A</b>. A <b>aceleração instantânea</b> é dada por:
+                                <p><span class="math display">\[\overrightarrow{a}=\lim_{\bigtriangleup{t}\to 0} \frac{\bigtriangleup\overrightarrow{v}}{\bigtriangleup{t}}\]</span></p>
+                                ou
+                                <p><span class="math display">\[\overrightarrow{a}=\frac{d\overrightarrow{v}}{d t}\]</span></p>
+                                que é a derivada temporal da velocidade.
+                                <br> <br> A aceleração, que é uma função do tempo, é dada por:
+                                <p><span class="math display">\[\overrightarrow{a}(t)=a_x\overrightarrow{e_x}+a_y\overrightarrow{e_y}+a_z\overrightarrow{e_z}\]</span></p>
+                                sendo:
+                                <p><span class="math display">\[a_x=\frac{d v_x}{d t} \qquad a_y=\frac{dv_y}{d t} \qquad a_z=\frac{d v_z}{d t}\]</span></p>
+                                Na Figura 9 mostra-se os vetores aceleração e velocidade do centro de massa de um automóvel que segue uma trajetória curvilínea: o aumento da distância percorrida em intervalos de tempo iguais e o aumento do módulo da velocidade revelam que o movimento
+                                é acelerado.
+                                <figure>
+                                    <img onclick="clique(this)" alt="Vetores velocidade e aceleração num movimento curvilíneo acelerado" src="./img/capitulos/figura9.jpg" title="Figura 9" style="display: block; margin-left: auto; margin-right: auto; max-width: 325px;">
+                                    <figcaption style="text-align: center;">Figura 9: Vetores velocidade e aceleração num movimento curvilíneo acelerado.
+                                    </figcaption>
+                                </figure>
+                                <br><br> Concluindo, há a possibilidade de descrever as trajetórias retilíneas e curvilíneas por meio de vetores (vetor velocidade e vetor aceleração).
+                                <br><br>
+                                <div class="centro">
+                                    <table class="tg" style="max-width: 75%;">
+                                        <thead>
+                                            <tr>
+                                                <th id="cor" class="tg-0pky">Trajetórias retilíneas</th>
+                                                <th id="cor" class="tg-0pky">Trajetórias curvilíneas</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="tg-0pky"><span class="math inline">\(\vec a\)</span> e <span class="math inline">\(\vec v\)</span> têm sempre a mesma direção, que coincidem com a direção da trajetória (podem ou não ter o mesmo sentido).
+                                                </td>
+                                                <td class="tg-0pky"><span class="math inline">\(\vec a\)</span> e <span class="math inline">\(\vec v\)</span> nunca têm a mesma direção: <span class="math inline">\(\vec a\)</span> aponta sempre o interior da curva e
+                                                    <span class="math inline">\(\vec v\)</span> é sempre tangente à curva em cada ponto.<br></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <br><br>
+                            </div>
+                        </section>
+                        <hr style="height:3px; border-width:0; color:#f8a73e; background-color:#f8a73e; width:100%; text-align: left;">
+                        <section id="cap3">
+                            <div class="cap1">
+                                <br><br>
+                                <h2>Componentes tangencial e normal da aceleração</h2>
+                                <br> As variações da velocidade de um corpo são provocadas por forças, que são estudadas na <b>dinâmica</b>.
+                                <br><br> A variação da velocidade pode ocorrer em módulo ou em direção ou ainda como no movimento do centro de massa de uma patinadora, simultaneamente em módulo e direção.
+                                <br><br>
+                                <div class="centro">
+                                    <table class="tg">
+                                        <thead>
+                                            <tr>
+                                                <th id="cor" class="tg-0pky" colspan="2" style="text-align: center;">Efeito da força resultante na velocidade do centro de massa de um corpo</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="tg-0pky"><span class="math inline">\(\overrightarrow{F_R}\)</span> tem a direção de <span class="math inline">\(\vec a\)</span>: a trajetória é retilínea. O movimento será acelerado, se <span class="math inline">\(\overrightarrow{F_R}\)</span>                                                    e <span class="math inline">\(\vec a\)</span> tiverem o mesmo sentido, ou retardado se tiverem sentidos opostos.</td>
+                                                <td class="tg-0pky"><span class="math inline">\(\overrightarrow{F_R}\)</span> não tem a direção de <span class="math inline">\(\vec v\)</span>: a trajetória é curvilínea. Se <span class="math inline">\(\overrightarrow{F_R}\)</span>                                                    e <span class="math inline">\(\vec v\)</span> forem perpendiculares, o movimento será uniforme; será acelerado se fizerem um ângulo inferior a <span class="math inline">\(90^\circ\)</span>;será retardado
+                                                    se esse ângulo for superior a <span class="math inline">\(90^\circ\)</span>.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <br> Num movimento curvilíneo, como o vetor aceleração está direcionado para o interior da curva, pela Segunda Lei de Newton,
+                                <span class="math inline">\(\overrightarrow{F_R}=m\vec a\)</span>, conclui-se que o mesmo acontece com o vetor força resultante,
+                                <span class="math inline">\(\overrightarrow{F_R}\)</span>, pois este tem a direção e o sentido da aceleração. Por vezes, é conveniente decompor a força resultante em duas componentes:
+                                <div class="centro">
+                                    <hr style="height:1px; border-width:0; color:#000000; background-color:#000000; width:50%;">
+                                </div>
+                                <ol>
+                                    <li> 1. <b>Componente tangencial da força resultante, <span class="math inline">\(\overrightarrow{F_t}\)</span>:</b> tem a direção da velocidade (é tangente à trajetória), o mesmo sentido ou sentido oposto, e provoca uma
+                                        variação no módulo da velocidade;</li>
+                                    <li> 2. <b>Componente normal da força resultante,<span class="math inline">\(\overrightarrow{F_n}\)</span> (também designada por força centrípeta, <span class="math inline">\(\overrightarrow{F_c}\)</span>)</b>: é normal
+                                        (perpendicular) à velocidade, aponta para o centro da curva (é centrípeta), e provoca uma variação da direção da velocidade. Apenas existe nos movimentos curvil íneos, pois só nestes a direção da velocidade varia.</li>
+                                </ol>
+                                <div class="centro">
+                                    <hr style="height:1px; border-width:0; color:#000000; background-color:#000000; width:50%;">
+                                </div>
+                                <br> Como as variações da velocidade são descritas pela aceleração, <span class="math inline">\(\vec a\)</span>, e atendendo à Segunda Lei de Newton, também se pode decompor a aceleração em duas componentes, a <b>componente
+                                tangencial</b>, <span class="math inline">\(\overrightarrow{a_t}\)</span>, e a <b>componente normal</b>, <span class="math inline">\(\overrightarrow{a_n}\)</span>:
+                                <p><span class="math display">\[\vec a = \overrightarrow{a_t} +\overrightarrow{a_n}\]</span></p>
+                                Estas componentes relacionam-se com as componentes tangencial e normal da força resultante atendendo à Segunda Lei de Newton:
+                                <p><span class="math display">\[\overrightarrow{F_t} = m\overrightarrow{a_t}\]</span></p>
+                                <p><span class="math display">\[\overrightarrow{F_n} = m\overrightarrow{a_n}\]</span></p>
+                                A Figura 10 representa, um ponto da trajetória, o vetor velocidade e o vetor aceleração, assim como a respetiva componente tangencial e normal.
+                                <br>
+                                <figure>
+                                    <img onclick="clique(this)" alt="A aceleração é a soma da componemte tangencial e da componemte normal. A velocidade é sempre tangencial à trajetória." src="./img/capitulos/figura10.jpg" title="Figura 10" style="display: block; margin-left: auto; margin-right: auto; max-width: 325px;">
+                                    <figcaption style="text-align: center;">Figura 10: A aceleração é a soma da componemte tangencial e da componemte normal. A velocidade é sempre tangencial à trajetória.
+                                    </figcaption>
+                                </figure>
+                                <br> A Figura 10 permite concluir que, quando o movimento é retardado, como no ponto <b>A</b>, o ângulo <span class="math inline">\(\theta\)</span> entre os vetores aceleração e velocidade é superior a <span class="math inline">\(90^\circ\)</span>;
+                                quando o movimento é acelerado, como nos pontos B e C, o ângulo <span class="math inline">\(\theta\)</span> entre os vetores velocidade e aceleração é inferior a <span class="math inline">\(90^\circ\)</span>.
+                                <br><br> A derivada temporal do módulo da velocidade é a componente tangencial da aceleração já que mede a variação do módulo a velocidade num dado instante:
+                                <p><span class="math display">\[a_t = \frac{dv}{dt}\]</span></p>
+                                pode-se ainda calcular a componente tangencial da aceleração pela expressão:
+                                <p><span class="math display">\[a_t = a\cos \theta\]</span></p>
+                                Note-se que, se o ângulo <span class="math inline">\(\theta\)</span> for maior do que <span class="math inline">\(90^\circ\)</span>, a componente tangencial da aceleração será negativa, o que significa que o movimento será
+                                retardado.
+                                <br><br> A componente tangencial da aceleração permite classificar os movimentos em uniformes, uniformemente variados e variados:
+                                <br><br>
+                                <ul>
+                                    <li>1. Movimentos uniformes
+                                        <ul>
+                                            <li>
+                                                - <span class="math inline">\(a_t = 0\)</span> (o módulo da velocidade não varia)
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>2. Movimentos uniformemente variados
+                                        <ul>
+                                            <li>
+                                                - <span class="math inline">\(a_t = constante\)</span> (o módulo da velocidade tem variação uniforme com o tempo)
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>3. Movimentos variados
+                                        <ul>
+                                            <li>
+                                                - <span class="math inline">\(a_t \ne constante\)</span> (o módulo da velocidade varia de forma não uniforme com o tempo)
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <br> A componente normal da aceleração é dada pela expressão
+                                <p><span class="math display">\[a_n = \frac{v^2}{r}\]</span></p>
+                                em que o símbolo <i>r</i> representa o raio de curvatura.
+                                <br><br> A Figura 10 representa a componente normal da aceleração que também pode ser calculada pela expressão:
+                                <p><span class="math display">\[a_n = a\sin\theta\]</span></p>
+                                <br> Numa trajetória circular, o raio de curvatura, r, que corresponde ao raio da circunferência. Nas outras curvas, para cada ponto atribui-se o <b>raio de curvatura</b> como o raio do arco circular que mais se aproxima
+                                da curva nesse ponto (Figura 11). O raio de curvatura é pequeno para curvas «fechadas» e grande para curvas «abertas», tendendo para infinito se a trajetória se aproximar de uma reta.
+                                <br>
+                                <figure>
+                                    <img onclick="clique(this)" alt="O raio de curvatura é menor numa curva mais pequena, como é o caso da posição A" src="./img/capitulos/figura11.png" title="Figura 11" style="display: block; margin-left: auto; margin-right: auto; max-width: 325px;">
+                                    <figcaption style="text-align: center;">Figura 11: O raio de curvatura é menor numa curva mais pequena, como é o caso da posição A.
+                                    </figcaption>
+                                </figure>
+                                <br> A expressão da aceleração normal, <span class="math inline">\(\frac{v^2}{r}\)</span>, indica que, quanto maior for a velocidade com que um automóvel faz uma curva, maior será a sua aceleração normal.
+                                <br><br> Se a curva for apertada (menor raio), a aceleração normal também será maior para o mesmo valor da velocidade. Posto isto, terá de ser maior a componente normal da força resultante. Se essa força não for minimamente
+                                intensa, o automóvel não fará a curva.
+                                <br><br> Como as componentes tangencial e normal da aceleração permitem conhecer o tipo de movimento, é útil definir dois eixos perpendiculares com origem na partícula, um com a direção da velocidade (eixo tangencial) e
+                                outro com a direção perpendicular e dirigido para o centro de curvatura (eixo normal), cujos vetores unitários são, respetivamente, <span class="math inline">\(\vec e_t\)</span> e <span class="math inline">\(\vec n\)</span>.
+                                <br><br> Neste sistema de eixos ligado à partícula, a expressão do vetor aceleração é:
+                                <p><span class="math display">\[\vec a = a_t\vec e_t + a_n\vec e_n\]</span></p>
+                                sendo o respetivo módulo dado por:
+                                <p><span class="math display">\[a = \sqrt{a_{t}^{2}+a_{n}^{2}}\]</span></p>
+                                <br><br>
+                            </div>
+                        </section>
+                        <hr style="height:3px; border-width:0; color:#f8a73e; background-color:#f8a73e; width:100%; text-align: left;">
+                        <section id="cap4">
+                            <div class="cap1">
+                                <br><br>
+                                <h2>Movimentos sob a ação de uma força resultante constante</h2>
+                                <br>Um corpo no qual atua uma mesma força resultante pode adquirir
+                                <b>movimentos com trajetórias diferentes</b>. Isto acontece porque, embora a força resultante seja igual, as condições iniciais - a posição e a velocidade iniciais - são diferentes.
+                                <br><br> Vejamos o exemplo de uma bola que roda, presa a um fio, numa trajetória circular num plano vertical. <b>Não tendo em conta a resistência do ar</b>. Se fio se partir, como a bola tem uma certa velocidade no instante
+                                da rutura, ela passará a ter um movimento em <b>queda livre</b> pois a única força que nela atua será o seu <b>peso</b>. No entanto, a forma da trajetória que a bola fará vai depender da posição no instante de rutura do
+                                fio, pois <b>em
+                                diferentes posições existirão diferentes velocidades do centro de massa da bola</b>.
+                                <br><br> Note-se que corpos com igual velocidade inicial, mas sujeitos a uma força resultante diferente também formam trajetórias diferentes, ou seja, <b>a trajetória depende ao mesmo tempo da força resultante, da posição
+                                e velocidade iniciais</b>.
+                                <br><br> Efetuemos para dois movimentos comuns: o o lançamento horizontal e o lançamento oblíquo.
+                                <br><br> Num lançamento horizontal o projétil tem velocidade inicial horizontal. É o caso de uma bola que cai quando lançada do tampo de uma mesa.
+                                <br><br> Abaixo escrevem-se as equações paramétricas do movimento e as componentes escalares da velocidade.
+                                <div class="centro">
+                                    <hr style="height:1px; border-width:0; color:#000000; background-color:#000000; width:50%;">
+                                    <br> <b>Lançamento horizontal</b>
+                                    <p><span class="math inline">\(a_x = 0\)</span> e <span class="math inline">\(a_y = -g\)</span></p>
+                                    <br> <span class="math inline">\(\rightarrow\)</span> Condições inicias:
+                                </div>
+                                <ol>
+                                    <li style="margin-left: 31%;">1. <span class="math inline">\(x_0 = 0\)</span> e <span class="math inline">\(y_0 = h\)</span></li>
+                                    <li style="margin-left: 31%;">2. <span class="math inline">\(v_{0x} = v_0\)</span> e <span class="math inline">\(v_{0y} = 0\)</span></li>
+                                </ol>
+                                <div class="centro">
+                                    <br> <span class="math inline">\(\rightarrow\)</span> Equações:
+                                </div>
+                                <ol>
+                                    <li style="margin-left: 31%;">1. <span class="math inline">\(x(t) = v_0 t\)</span> e <span class="math inline">\(y(t) = h - \frac{1}{2} g t^2\)</span></li>
+                                    <li style="margin-left: 31%;">2. <span class="math inline">\(v_x = v_0\)</span> e <span class="math inline">\(v_y (t) = -g t\)</span></li>
+                                    <li style="margin-left: 31%;">3. sendo: <span class="math inline">\(v = \sqrt{v_{x}^{2} + v_{y}^{2}}\)</span></li>
+                                </ol>
+                                <div class="centro">
+                                    <hr style="height:1px; border-width:0; color:#000000; background-color:#000000; width:50%;">
+                                </div>
+                                <br> Verifique-se que a componente escalar vertical cresce, pois, o movimento é uniformemente acelerado nesta direção, enquanto a componente escalar horizontal permanece igual, pois o movimento é uniforme na direção horizontal.
+                                <br><br>Ao remover a variável t nas equações paramétricas, obtém-se a equação da trajetória, <span class="math inline">\(y = h -\frac{1}{2}g\frac{x}{v_0}^2\)</span>, que é a equação de uma <b>parábola</b>.
+                                <br><br> O tempo de queda dá-se pela equação <span class="math inline">\(y(t) = h - \frac{1}{2}gt^2\)</span> fazendo <span class="math inline">\(y = 0\)</span>:
+                                <p><span class="math display">\[t = \sqrt{\frac{2h}{g}}\]</span></p>
+                                Esta expressão mostra que <b>o tempo de queda depende da altura de queda</b>, h, mas não da velocidade inicial, <span class="math inline">\(v_0\)</span>. Ou seja, uma bola lançada horizontalmente ou deixada cair da mesma
+                                altura demora o mesmo tempo a atingir o solo, pois os movimentos na direção vertical são os mesmos: a componente escalar vertical da posição, em cada instante, é a mesma.
+                                <br><br> O alcance do projétil, que é a distância máxima percorrida horizontalmente, consegue-se substituindo o tempo de queda na equação
+                                <span class="math inline">\(x(t)=v_0t\)</span>, obtendo-se:
+                                <p><span class="math display">\[x_{max} = v_0\sqrt{\frac{2h}{g}}\]</span></p>
+                                Esta expressão permite deduzir que, para a mesma altura de queda, quanto maior for a velocidade inicial maior será o alcance.
+                                <br><br> Poderando agora o lançamento oblíquo de um projétil, ou seja, aquele em que a velocidade inicial é oblíqua, fazendo um certo ângulo, <span class="math inline">\(\theta\)</span>, com a direção horizontal.
+                                <br><br> Ao contrário do lançamento horizontal, neste lançamento a velocidade inicial tem duas componentes: uma horizontal e outra vertical.
+                                <br><br> Na estrutura abaixo escrevem-se as equações paramétricas dos movimentos, assim como as componentes escalares da velocidade.
+                                <div class="centro">
+                                    <hr style="height:1px; border-width:0; color:#000000; background-color:#000000; width:50%;">
+                                    <br> <b>Lançamento oblíquo</b>
+                                    <p><span class="math inline">\(a_x = 0\)</span> e <span class="math inline">\(a_y = -g\)</span></p>
+                                    <br> <span class="math inline">\(\rightarrow\)</span> Condições inicias:
+                                </div>
+                                <ol>
+                                    <li style="margin-left: 31%;">1. <span class="math inline">\(x_0 = 0\)</span> e <span class="math inline">\(y_0 = 0\)</span></li>
+                                    <li style="margin-left: 31%;">2. <span class="math inline">\(v_{0x} = v_0 \cos \theta\)</span> e <span class="math inline">\(v_{0y} = v_0 \sin \theta\)</span></li>
+                                </ol>
+                                <div class="centro">
+                                    <br> <span class="math inline">\(\rightarrow\)</span> Equações:
+                                </div>
+                                <ol>
+                                    <li style="margin-left: 31%;">1. <span class="math inline">\(x(t) = v_0 \cos \theta t\)</span> e <span class="math inline">\(y(t) = v_0 \sin \theta t - \frac{1}{2} g t^2\)</span></li>
+                                    <li style="margin-left: 31%;">2. <span class="math inline">\(v_x = v_0 \cos \theta\)</span> e <span class="math inline">\(v_y  = v_0 \sin \theta -g t\)</span></li>
+                                    <li style="margin-left: 31%;">3. sendo: <span class="math inline">\(v = \sqrt{v_{x}^{2} + v_{y}^{2}}\)</span></li>
+                                </ol>
+                                <div class="centro">
+                                    <hr style="height:1px; border-width:0; color:#000000; background-color:#000000; width:50%;">
+                                </div>
+                                <br> Como mostra acima, o <b>módulo da componente escalar vertical da velocidade</b>, <span class="math inline">\(v_y\)</span> diminui na subida e aumenta na descida, cortando-se mutuamente no ponto de altura máxima. Fazendo
+                                <span class="math inline">\(v_y = O\)</span> na equação <span class="math inline">\(v_y = v_0 \sin \theta - gt\)</span> obtém-se o tempo de subida projétil:
+                                <span class="math display">\[t_{subida} = \frac{v_0 \sin\theta}{g}\]</span> Tendo em conta o caso particular de um projétil que volta ao plano horizontal de onde foi lançado. <b>O tempo de subida é igual ao tempo de descida</b>,
+                                por isso o tempo de voo - tempo que o projétil permanece no ar - é o dobro do tempo de subida:
+                                <p><span class="math display">\[t_{voo} = 2\frac{v_0 \sin\theta}{g}\]</span></p>
+                                Pode-se determinar uma expressão para a altura máxima substituindo-se o tempo de subida, <span class="math inline">\(t_{subida} = \frac{v_o\sin \theta}{g}\)</span>, na equação <span class="math inline">\(y(t) =v_0 \sin \theta t - \frac{1}{2} g t^2\)</span>e
+                                obtendo-se:
+                                <p><span class="math display">\[y_{max} = \frac{v_{0}^{2} \sin^2\theta}{2g}\]</span></p>
+                                Do mesmo modo se define uma expressão para o alcance do projétil substituindo o tempo de voo, <span class="math inline">\(t_{voo} = 2\frac{v_0 \sin \theta}{g}\)</span>, na equação <span class="math inline">\(x(t) = v_0 \cos \theta t\)</span>,
+                                obtendo-se:
+                                <p><span class="math display">\[A = \frac{v_{0}^{2} \sin 2\theta}{g}\]</span></p>
+                                <br><br>
+                            </div>
+                        </section>
+                        <hr style="height:3px; border-width:0; color:#f8a73e; background-color:#f8a73e; width:100%; text-align: left;">
+                        <section id="cap5">
+                            <div class="cap1">
+                                <br><br>
+                                <h2>Movimentos de corpos sujeitos a ligações</h2>
+                                <br> Analisa-se os movimentos de corpos sujeitos a uma força resultante contínua e, mais precisamente, movimentos de projéteis que apenas estão sujeitos ao seu peso.
+                                <br><br> Mas há corpos que estão ligados a outros, havendo forças que formem essas ligações. Estas forças chamam-se <b>forças de ligação</b>.
+                                <br><br> É o caso, por exemplo, de corpos suspensos de correntes, como num "slingshot" (Figura 12). Tendo em conta que o conjunto de correntes é equivalente a só fio, a força que esse fio executa sobre a cadeira, cuja direção
+                                coincide com a do fio, é a tensão, <span class="math inline">\(\vec T\)</span>. Esta força garante a ligação entre a cadeira e o fio: diz-se que a <b>tensão</b> é uma <b>força de ligação</b>. A sua intensidade depende do
+                                peso do conjunto que roda <i>(pessoa + cadeira)</i>: quanto maior for o peso, maior será a tensão.
+                                <br> <br>
+                                <figure>
+                                    <img onclick="clique(this)" alt="Slingshot" src="./img/capitulos/figura12.jpg" title="Figura 12" style="display: block; margin-left: auto; margin-right: auto; max-width: 325px;">
+                                    <figcaption style="text-align: center;">Figura 12: Slingshot.
+                                    </figcaption>
+                                </figure>
+                                <br> Outro exemplo de força de Ligação é a força exercida sobre um corpo por um plano (horizontal, inclinado, etc), perpendicularmente a este: a força normal, N. Esta força restringe a trajetória do corpo, impedindo o movimento
+                                do corpo na direção perpendicular ao plano de apoio. outro exemplo, é o caso da força normal exercida num carrinho de uma montanha-russa (Figura 13).
+                                <br><br>
+                                <figure>
+                                    <img onclick="clique(this)" alt="Montalha-russa" src="./img/capitulos/figura13.jpg" title="Figura 13" style="display: block; margin-left: auto; margin-right: auto; max-width: 325px;">
+                                    <figcaption style="text-align: center;">Figura 13: Montalha-russa.
+                                    </figcaption>
+                                </figure>
+                                <br> Pode-se analisar alguns movimentos retilíneos e circulares sujeitos a ligações, na privação de forças de atrito, de maneira a calcular as intensidades da tensão, <span class="math inline">\(\vec T\)</span>, e da força
+                                normal, <span class="math inline">\(\vec N\)</span>.
+                                <br><br>
+                                <h4 style="text-align: center;">Exemplo 1 - Movimento retilíneo de um sistema de corpos</h4>
+                                <br> Consegue-se analisar o movimento de dois esquiadores, agarrados por uma corda (ou fio), sendo um puxado por uma corda com uma força constante
+                                <span class="math inline">\(\vec F\)</span> sobre uma superfície onde é desprezável a força de atrito.
+                                <br><br> Abaixo está descrita a situação anterior (Figura 14). Há três corpos em movimento: o corpo A, o corpo B e o fio que os une. Se a massa do fio for considerada nula, isto é, muito menor do que a massa dos restantes
+                                corpos, pode-se ignorar o peso do fio.
+                                <br> <br>
+                                <figure>
+                                    <img onclick="clique(this)" alt="Dois corpos ligados por um fio" src="./img/capitulos/figura14.png" title="Figura 14" style="display: block; margin-left: auto; margin-right: auto; max-width: 325px;">
+                                    <figcaption style="text-align: center;">Figura 14: Dois corpos ligados por um fio.
+                                    </figcaption>
+                                </figure>
+                                <br> Aplicando a Segunda Lei de Newton vem, <span class="math inline">\(F_x = ma\)</span> e <span class="math inline">\(F_y = 0\)</span>. Como não há forças segundo o eixo dos <span class="math inline">\(yy\)</span> e
+                                <span class="math inline">\(m_{fio} \approx O\)</span>, obtém-se:
+                                <br>
+                                <p><span class="math display">\[F_x = m_{corda}a_x \Rightarrow T'_A - T'_B = 0 \Leftrightarrow T'_A = T'_B (com m_{fio} \approx 0)\]</span></p>
+                                <br> Em suma, sempre que a massa de um fio (ou corda) for quase insignificante, a tensão ao longo do fio tem a mesma intensidade.
+                                <br><br> Pode-se então escrever <span class="math inline">\(T'_B = T'_A = T\)</span>. Mas, como <span class="math inline">\(\vec{T'_B}\)</span> e <span class="math inline">\(\vec{T'_A}\)</span> formam pares ação-reação
+                                com, respetivamente, <span class="math inline">\(\vec{T_A}\)</span> e <span class="math inline">\(\vec{T_B}\)</span>, também se escreve
+                                <br>
+                                <p><span class="math display">\[T_B = T_A = T (com  m_{fio} \approx0)\]</span></p>
+                                <br>
+                                <div class="centro">
+                                    <hr style="height:1px; border-width:0; color:#000000; background-color:#000000; width:50%;">
+                                    <br> Corpo A:
+                                    <p><span class="math display">\[\left\{
+                                        \begin{array}{cl}
+                                        F_x = ma_x \\
+                                        F_y = 0
+                                        \end{array}
+                                        \Leftrightarrow
+                                        \right.
+                                        \left\{
+                                        \begin{array}{cl}
+                                        F \cos\theta - T = m_Aa \\
+                                        F \sin \theta + N_A - P_A = 0
+                                        \end{array}
+                                        \right.\]</span></p>
+                                    <br> Corpo B:
+                                    <p><span class="math display">\[\left\{
+                                        \begin{array}{cl}
+                                        F_x = ma_x \\
+                                        F_y = 0
+                                        \end{array}
+                                        \Leftrightarrow
+                                        \right.
+                                        \left\{
+                                        \begin{array}{cl}
+                                        T = m_Ba \\
+                                        N_B - P_B = 0
+                                        \end{array}
+                                        \right.\]</span></p>
+                                    <hr style="height:1px; border-width:0; color:#000000; background-color:#000000; width:50%;">
+                                </div>
+                                <br> Acima escreve-se a expressão da Segunda Lei de Newton para os corpos A e B.
+                                <br><br> As segundas equações de cada sistema permitem calcular a intensidade das respetivas forças normais: <span class="math inline">\(N_A = P_A - F \sin \theta\)</span> e <span class="math inline">\(N_B = P_B\)</span>.
+                                <br><br> As equações restantes formam o sistema:
+                                <br>
+                                <div class="centro">
+                                    <p><span class="math display">\[\left\{
+                                        \begin{array}{cl}
+                                        F \cos \theta - T = m_Aa \\
+                                        T = m_Ba
+                                        \end{array}
+                                        \right.\]</span></p>
+                                </div>
+                                <br>o qual possibilita obter a aceleração, a, com que se move o conjunto e o valor da tensão, <span class="math inline">\(T\)</span>, a partir da intensidade da força, <span class="math inline">\(F\)</span>, que puxa o
+                                corpo A e do ângulo <span class="math inline">\(\theta\)</span> (cujos valores são conhecidos):
+                                <p><span class="math display">\[a = \frac{F\cos\theta}{m_A+m_B} \qquad T = \frac{m_B}{m_A+m_B}\]</span></p>
+                                <br>
+                                <div class="centro">
+                                    <h4>Exemplo 2 - Movimento circular num plano vertical: a montanha-russa</h4>
+                                </div>
+                                <br> Analisando o movimento de um carrinho numa montanha-russa, supondo que não existe um mecanismo de segurança que impeça a projeção do carrinho.
+                                <br><br> Analisando o movimento nas posições A, B, C e D (Figura 15), supondo que as últimas três posições estão sobre o mesmo arco de circunferência. As forças que se realizam sobre o carrinho são sempre as mesmas (contínuas):
+                                o peso, que é uma força de intensidade constante, e a força normal, que é variável em direção e intensidade.
+                                <br><br>
+                                <figure>
+                                    <img onclick="clique(this)" alt="Movimento de corpo numa montanha-russa quando se desloca por A, B, C e D" src="./img/capitulos/figura15.png" title="Figura 15" style="display: block; margin-left: auto; margin-right: auto; max-width: 325px;">
+                                    <figcaption style="text-align: center;">Figura 15: Movimento de corpo numa montanha-russa quando se desloca por A, B, C e D.
+                                    </figcaption>
+                                </figure>
+                                <br> Como a trajetória é redonda, deve-se usar um referencial ligado à partícula. Para cada posição, tem-se de ponderar três eixos: o tangencial, designado por t e o normal, designado por n. Como não há nenhuma força na
+                                direção do eixo dos <i>zz</i>, <span class="math inline">\(F_z=0\)</span>.
+                                <br><br> Escrevendo estas equações para cada ponto do carrinho atendendo ao raio de curvatura, que é r para a posição A e R para as posições B, C e D.
+                                <br><br>
+                                <div class="centro">
+                                    Para a posição A, vem:
+                                    <p><span class="math display">\[\left\{
+                                        \begin{array}{cl}
+                                        F_t = ma_t \\
+                                        F_n = ma_n
+                                        \end{array}
+                                        \right.
+                                        \Rightarrow
+                                        \left\{
+                                        \begin{array}{cl}
+                                        0 = ma_t \\
+                                        P - N_A = m\frac{v_{A}^{2}}{r}
+                                        \end{array}
+                                        \right.
+                                        \Rightarrow
+                                        \left\{
+                                        \begin{array}{cl}
+                                        a_t = 0 \\
+                                        N_A = P - m\frac{v_{A}^{2}}{r}
+                                        \end{array}
+                                        \right.\]</span></p>
+                                </div>
+                                <br> Da primeira equação, concluímos que a aceleração tangencial é nula em A.
+                                <br><br> A segunda equação permite:
+                                <ul>
+                                    <li>1. calcular a intensidade da força normal, <span class="math inline">\(\vec N\)</span>, conhecida a velocidade em A;</li>
+                                    <li>2. verificar que tem de existir a condição <span class="math inline">\(N_A &lt; P\)</span>, pois o segundo membro da equação, <span class="math inline">\(m\frac{v_{A}^{2}}{r}\)</span>, é sempre positivo.</li>
+                                </ul>
+                                <br> Uma curva só é feita quando há uma componente centrípeta da resultante das forças a dirigir-se para o centro de curvatura. Por este motivo, <b>a
+                                intensidade da força que aponta para o centro da curvatura tem
+                                de ser maior do que a intensidade da força que aponta para fora</b>.
+                                <br><br> Como a intensidade da força normal é sempre positiva, <span class="math inline">\(N_A > 0\)</span>, o caso limite ocorre para
+                                <span class="math inline">\(N_A = 0\)</span>, ou seja, quando o plano não exerce força sobre o corpo. Nesta situação, o corpo fica prestes a entrar em voo de projétil, porque apenas atua o seu peso. Por isso tem de se verificar:
+                                <p><span class="math display">\[N_A > 0 \Rightarrow P - m\frac{v_{A}^{2}}{r} > 0 \Leftrightarrow mg > m\frac{v_{A}^{2}}{r} \Leftrightarrow v_A &lt; \sqrt{rg}\]</span></p>
+                                Ou seja, a condição de segurança em A é que o módulo da velocidade seja inferior a <span class="math inline">\(\sqrt{rg}\)</span>, ou seja o raio de curvatura é decisivo.
+                                <br><br>
+                                <div class="centro">
+                                    Para a posição B, as equações são:
+                                    <p><span class="math display">\[\left\{
+                                        \begin{array}{cl}
+                                        F_t = ma_t \\
+                                        F_n = ma_n
+                                        \end{array}
+                                        \right.
+                                        \Rightarrow
+                                        \left\{
+                                        \begin{array}{cl}
+                                        0 = ma_t \\
+                                        N_B - P = m\frac{v_{B}^{2}}{R}
+                                        \end{array}
+                                        \right.
+                                        \Rightarrow
+                                        \left\{
+                                        \begin{array}{cl}
+                                        a_t = 0 \\
+                                        N_B = P + m\frac{v_{B}^{2}}{R}
+                                        \end{array}
+                                        \right.\]</span></p>
+                                </div>
+                                <br> Da primeira equação concluímos que a aceleração tangencial é nula em B.
+                                <br><br> A segunda equação permite:
+                                <ul>
+                                    <li>1. calcular a intensidade da força normal, <span class="math inline">\(\vec N\)</span>, conhecida a velocidade em B;</li>
+                                    <li>2. verificar que a força normal nesta posição é sempre maior do que o peso, pois <span class="math inline">\(P + m\frac{v_{B}^{2}}{R}\)</span> é sempre positivo. Então, a segurança está garantida na posição B. No entanto,
+                                        se a velocidade for demasiado alta, a força normal poderá ter uma intensidade tão grande que incomoda os passageiros.</li>
+                                </ul>
+                                <br>
+                                <div class="centro">
+                                    Para a posiçao C, as esquações são:
+                                    <p><span class="math display">\[\left\{
+                                        \begin{array}{cl}
+                                        F_t = m_at \\
+                                        F_n = m_an
+                                        \end{array}
+                                        \right.
+                                        \Rightarrow
+                                        \left\{
+                                        \begin{array}{cl}
+                                        -P = m_at \\
+                                        N_C = m\frac{v_{C}^{2}}{R}
+                                        \end{array}
+                                        \right.
+                                        \Rightarrow
+                                        \left\{
+                                        \begin{array}{cl}
+                                        a_t = -g \\
+                                        N_C = m\frac{v_{C}^{2}}{R}
+                                        \end{array}
+                                        \right.\]</span></p>
+                                    Na posiçao D, as equações são:
+                                    <p><span class="math display">\[\left\{
+                                        \begin{array}{cl}
+                                        F_t = m_at \\
+                                        F_n = m_an
+                                        \end{array}
+                                        \right.
+                                        \Rightarrow
+                                        \left\{
+                                        \begin{array}{cl}
+                                        0 = m_at \\
+                                        N_D + P = m\frac{v_{D}^{2}}{R}
+                                        \end{array}
+                                        \right.
+                                        \Rightarrow
+                                        \left\{
+                                        \begin{array}{cl}
+                                        a_t = 0 \\
+                                        N_D = m\frac{v_{D}^{2}}{R} - P
+                                        \end{array}
+                                        \right.\]</span></p>
+                                </div>
+                                <br> A segunda equação permite obter a condição de segurança em D, pois tem de se verificar:
+                                <p><span class="math display">\[N_D > 0 \Leftrightarrow m\frac{v_{D}^{2}}{R} - P > 0 \Leftrightarrow m\frac{v_{D}^{2}}{R} > mg \Leftrightarrow v_D > \sqrt{Rg}\]</span></p>
+                                Ou seja, na posição de altura máxima do arco, o carrinho tem de ter uma velocidade mínima para não cair, que submete-se ao raio de curvatura.
+                            </div>
+                        </section>
+                        <div id="janela" class="visual">
+                            <span class="fechar">x</span>
+                            <img class="conteudo" alt="" id="imagem">
+                            <div id="legenda"></div>
+                        </div>
+                    </div>
+                    <span style="display:block; height: 80px; "></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/capitulos.js"></script>
+    <script type="text/javascript" src="./js/relogio.js"></script>
+
+</body>
+
+</html>

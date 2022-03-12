@@ -1,0 +1,15 @@
+|Cmp1bit
+xout <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+xin => inst52.IN0
+b => inst7.IN0
+b => inst5.IN0
+b => inst8.IN0
+a => inst7.IN1
+a => inst4.IN1
+a => inst6.IN0
+yout <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+yin => inst99.IN0
+zout <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+zin => inst12.IN0
+
+

@@ -1,0 +1,79 @@
+\documentclass[11pt,openright,twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\begin{document}
+
+\subsection{Figura}
+\label{figure}
+\begin{figure}[h]
+\centerline{\fbox{Conteúdo da figura, pode ser texto, imagem, etc.}}
+\caption{Legenda da figura}
+\end{figure}
+
+\pagebreak
+
+\subsection{Tabela}
+\label{tabel}
+\begin{table}[htp]
+\caption{Exemplo de uma tabela}
+\centerline{Conteúdo de uma tabela}
+\end{table}
+
+\pagebreak
+
+\subsection{Referências a partes do texto}
+\label{refs.Section}
+Qualquer identificador numérico usado num documento {\LaTeX}, seja ele de parte, capítulo, secção, lista numerada, figura, tabela, e outros, pode ser usado no texto através dos comandos ...
+
+\pagebreak
+
+\ref{figure}
+\ref{tabel}
+\ref{refs.Section}
+
+\pagebreak
+
+\begin{tabular}{|l||c|r|}
+%
+\hline
+& Temperatura & Humidade \\
+Cidade & (\textordmasculine C) & (perc.) \\ \hline\hline
+Aveiro & {\large 10} & {\large 90} \\ \hline
+Lisboa & {\tiny 13} & {\tiny 84} \\ \hline
+Porto & \textbf{9} & \textbf{89} \\ \hline
+%
+\end{tabular}
+
+\pagebreak
+
+a expressão $$y = ax^2 + bx + c$$ é a forma geral da equação de 2º grau
+\\\\\\
+a expressão $y = ax^2 + bx + c$ é a forma geral da equação
+de 2º grau
+\\\\\\
+a expressão
+\[
+y = ax^2 + bx + c
+\]
+é a forma geral da equação de 2º grau
+\\\\\\
+a expressão \ref{2ordem.eq}
+\begin{equation}
+y = ax^2 + bx + c \label{2ordem.eq}
+\end{equation}
+é a forma geral da equação de 2º grau
+\\\\\\
+Perímetro e área do círculo:
+\begin{eqnarray}
+P = 2\pi r \\
+A = \pi r^2
+\end{eqnarray}
+\\\\\\
+$y = \sum_{i=0}^{i=n}{x_{i}^{2n}}$
+$$y = \sum_{i=0}^{i=n}{x_{i}^{2n}}$$
+\\
+
+
+\end{document}
