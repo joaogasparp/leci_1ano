@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Ex4 {
     public static void main(String[] args) {
 
-        double Minvestido, Jmensal, Total;
+        double Minvestido, Jmensal;
         Scanner input = new Scanner(System.in);
         System.out.print("Insira o montante investido:");
         Minvestido = input.nextDouble();
