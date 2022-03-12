@@ -9,7 +9,7 @@ public class Ex1 {
         System.out.print("Insira distância em km: ");
 		km = sc.nextDouble();
 		miles = km / 1.609;
-		System.out.println("A distância em milhas é " + miles);
+		System.out.println("A distância em milhas é " + miles + ".");
 		sc.close();
 
     }
