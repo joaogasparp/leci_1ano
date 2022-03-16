@@ -9,11 +9,17 @@ public class Ex6 {
         System.out.print("Insira o tempo em segundos: ");
         segundos = input.nextInt();
         input.close();
-        horas = segundos/3600;
-        segundos -= horas*3600;
-        minutos = segundos/60;
-        segundos -= minutos*60;
-        System.out.println(String.format("%02d:%02d:%02d", horas,minutos,segundos));
-        
+
+        if (segundos <0) {
+            System.out.println("ERRO: Insira valores positivos e não nulos.");
+        }
+        else {
+            horas = segundos/3600;
+            segundos -= horas*3600;
+            minutos = segundos/60;
+            segundos -= minutos*60;
+            System.out.println(String.format("%02d:%02d:%02d", horas,minutos,segundos));
+        }
+
     }    
 }

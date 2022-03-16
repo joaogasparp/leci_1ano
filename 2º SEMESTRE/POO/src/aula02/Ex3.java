@@ -13,8 +13,14 @@ public class Ex3 {
         System.out.print("Insira a temperatura final:");
         finalTemperature = input.nextDouble();
         input.close();
-        Q = M * (finalTemperature - initialTemperature) * 4184;
-        System.out.println("A energia (Q), em Joules, é " + Q + " J.");
+
+        if (M <= 0 || initialTemperature <= 0 || finalTemperature <= 0) {
+            System.out.println("ERRO: Insira valores positivos e não nulos.");
+        }
+        else {
+            Q = M * (finalTemperature - initialTemperature) * 4184;
+            System.out.println("A energia (Q), em Joules, é " + Q + " J.");
+        }
 
     }
 }

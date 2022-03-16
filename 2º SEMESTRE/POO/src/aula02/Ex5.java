@@ -15,8 +15,14 @@ public class Ex5 {
         System.out.print("Velocidade 2 (m/s): ");
         v2 = input.nextDouble();
         input.close();
-        vf = (d1+d2)/((d1/v1)+(d2/v2));
-        System.out.println("Velocidade média final (m/s): " + vf);
-              
+
+        if (d1 <= 0 || v1 <= 0 || d2 <=0 || v2 <= 0) {
+            System.out.println("ERRO: Insira valores positivos e não nulos.");
+        }
+        else {
+            vf = (d1+d2)/((d1/v1)+(d2/v2));
+            System.out.printf("Velocidade média final (m/s): %.2f.", vf);
+        }
+
     }
 }

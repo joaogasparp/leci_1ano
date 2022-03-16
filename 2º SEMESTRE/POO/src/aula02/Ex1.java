@@ -9,8 +9,14 @@ public class Ex1 {
         System.out.print("Insira distância em km: ");
 		km = input.nextDouble();
 		input.close();
-		miles = km / 1.609;
-		System.out.println("A distância em milhas é " + miles + ".");
+
+		if (km <= 0) {
+			System.out.println("ERRO: Número negativo ou nulo.");
+		}
+		else  {
+			miles = km / 1.609;
+			System.out.printf("A distância em milhas é %.2f.", miles);
+		}
 
     }
 }

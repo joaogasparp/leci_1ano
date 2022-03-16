@@ -19,12 +19,15 @@ public class Ex7 {
         p2[1] = input.nextDouble();
         input.close();
 
-        u[0] = p2[0]-p1[0];
-        u[1] = p2[1]-p1[1];
-
-        distancia = Math.sqrt(Math.pow(u[0], 2) + Math.pow(u[1], 2));
-
-        System.out.println("A distância entre P1 e P2 é de " + distancia + " unidades.");
+        if (p1[0]<=0 || p1[1]<=0 || p2[0]<=0 || p2[1]<=0) {
+            System.out.println("ERRO: Insira valores positivos e não nulos.");
+        }
+        else {
+            u[0] = p2[0]-p1[0];
+            u[1] = p2[1]-p1[1];
+            distancia = Math.sqrt(Math.pow(u[0], 2) + Math.pow(u[1], 2));
+            System.out.println("A distância entre P1 e P2 é de " + distancia + " unidades.");
+        }
 
     }
 }
