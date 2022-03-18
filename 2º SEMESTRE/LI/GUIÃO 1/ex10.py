@@ -1,16 +1,17 @@
-import sys
 from Crypto.PublicKey import RSA
+import sys
+import time
+time.clock = time.time
 
-if (len(sys.argv) != 4):
-    print("Usage: {} nome chave nBits".format(sys.argv[0]))
-    exit(1)
+def main(filename, chave, nbits):
+  keypair = RSA.generate( nbits )
+  with open( filename, "wb" ) as fout:
+    kp = keypair.exportKey( "PEM", chave )
+    fout.write(kp)
 
-nome = sys.argv[1]
-chave = sys.argv[2]
-nBits = int(sys.argv[3])
+  print(keypair.publickey())
+  with open( filename+".pub", "wb" ) as fout:
+    kp = keypair.publickey().exportKey( "PEM" )
+    fout.write(kp)
 
-keypair = RSA.generate(nBits)
-fout = open(f"{nome}.pem", "wb")
-kp = keypair.exportKey("PEM", chave)
-fout.write(kp)
-fout.close()
+main(sys.argv[1], sys.argv[2], int(sys.argv[3]))
