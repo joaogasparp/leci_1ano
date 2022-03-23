@@ -25,9 +25,9 @@ public class Ex5 {
         }while (taxa < 0 || taxa > 5);
         
         for (int i = 1; i <= meses; i++) {
-			mInv += mInv * (taxa / 100);
-			System.out.printf("Balanço no final do mês %02d: %.2f euros.\n", i, mInv);
-		}
+		mInv += mInv * (taxa / 100);
+		System.out.printf("Balanço no final do mês %02d: %.2f euros.\n", i, mInv);
+	}
 
         input.close();
     }
