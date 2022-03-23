@@ -19,20 +19,19 @@ public class Ex7 {
             }
         }while(guess < 1 || guess > 100);
 
-		do {
-            tentativas++;
+	do {
+	    tentativas++;
 
-			if (guess == nRandom) break;
-			else if (guess > nRandom) System.out.println("O número secreto é menor do que o número introduzido.");
-			else System.out.println("O número secreto é maior do que o número introduzido.");
-
+	    if (guess == nRandom) break;
+	    else if (guess > nRandom) System.out.println("O número secreto é menor do que o número introduzido.");
+	    else System.out.println("O número secreto é maior do que o número introduzido.");
             System.out.println("Pretende continuar? Prima (S)im. Caso queira sair, escreva qualquer caracter.");
-			answer = input.nextLine();
-		} while (answer.equals("S") || answer.equals("Sim") || answer.equals("s")|| answer.equals("sim"));
+	    answer = input.nextLine();
+	} while (answer.equals("S") || answer.equals("Sim") || answer.equals("s")|| answer.equals("sim"));
 
-		System.out.println("O número secreto era " + nRandom + "!");
-		System.out.println("Tentativas: " + tentativas);
-     
-        input.close();
+	    System.out.println("O número secreto era " + nRandom + "!");
+	    System.out.println("Tentativas: " + tentativas);
+    
+	    input.close();
     }
 }
