@@ -26,7 +26,7 @@ public class Ex7 {
 	    else if (guess > nRandom) System.out.println("O número secreto é menor do que o número introduzido.");
 	    else System.out.println("O número secreto é maior do que o número introduzido.");
             System.out.println("Pretende continuar? Prima (S)im. Caso queira sair, escreva qualquer caracter.");
-	    answer = input.nextLine();
+	        answer = input.nextLine();
 	} while (answer.equals("S") || answer.equals("Sim") || answer.equals("s")|| answer.equals("sim"));
 
 	    System.out.println("O número secreto era " + nRandom + "!");
