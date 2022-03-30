@@ -20,7 +20,7 @@ public class Ex6 {
         }while(mes < 0 || mes > 12);
 
         if (mes == 2) {
-            if (ano%4 == 0)
+            if ((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0)
              dias = 29;
             else
              dias = 28;

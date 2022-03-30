@@ -14,18 +14,59 @@ public class Ex4 {
         int month, year, weekDay;
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Introduza o mês: ");
-        month = input.nextInt();
-        System.out.println("Introduza o ano: ");
-        year = input.nextInt();
-        System.out.println("Introduza o dia da semana: ");
-        weekDay = input.nextInt();
+        do{
+            try {
+                do {
+                    System.out.println("Introduza o ano: ");
+                    year = input.nextInt();
+                    if (year < 0) {
+                        System.out.println("ERRO: Valores introduzidos inválidos.");
+                    }
+                }while (year < 0);
+                break;
+            } catch (Exception e) {
+                input.nextLine();
+                System.out.println("ERRO: O valor introduzido tem de ser um número!");
+            }
+        }while(true);
+
+        do{
+            try {
+                do {
+                    System.out.println("Introduza o mês (1 - janeiro, ..., 12 - dezembro): ");
+                    month = input.nextInt();
+                    if (month < 0 || month > 12) {
+                        System.out.println("ERRO: Valores introduzidos inválidos.");
+                    }
+                }while (month < 0 || month > 12);
+                break;
+            } catch (Exception e) {
+                input.nextLine();
+                System.out.println("ERRO: O valor introduzido tem de ser um número!");
+            }
+        }while(true);
+
+        do{
+            try {
+                do {
+                    System.out.println("Introduza o dia da semana (1 - Segunda-feira, ..., 7 - Domingo): ");
+                    weekDay = input.nextInt();
+                    if (weekDay < 0 || weekDay > 7) {
+                        System.out.println("ERRO: Valores introduzidos inválidos.");
+                    }
+                }while (weekDay < 0 || weekDay > 7);
+                break;
+            } catch (Exception e) {
+                input.nextLine();
+                System.out.println("ERRO: O valor introduzido tem de ser um número!");
+            }
+        }while(true);
 
         input.close();
         return new int[] { month, year, weekDay };
     }
 
-    private static void drawCalendar(int month, int year, int weekDay) {
+    private static void drawCalendar(int year, int month, int weekDay) {
 
         int days = numberOfDaysInMonth(month, year);
         String monthName = getMonthName(month);
