@@ -1,0 +1,13 @@
+import socket
+
+def main():
+    udp_s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    udp_s.bind(("0.0.0.0", 1234))
+    while 1:
+        # ---
+        b_data, addr = udp_s.recvfrom(4096)
+        str_data = b_data.decode("utf-8")
+        print("->: %s \n" % str_data)
+        udp_s.sendto(b_data.upper(), addr)
+                  
+main()
