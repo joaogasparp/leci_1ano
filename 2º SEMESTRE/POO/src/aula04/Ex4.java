@@ -63,7 +63,7 @@ public class Ex4 {
         }while(true);
 
         input.close();
-        return new int[] { month, year, weekDay };
+        return new int[] { year, month, weekDay };
     }
 
     private static void drawCalendar(int year, int month, int weekDay) {
@@ -71,7 +71,7 @@ public class Ex4 {
         int days = numberOfDaysInMonth(month, year);
         String monthName = getMonthName(month);
 
-        System.out.println(monthName + " " + year);
+        System.out.println("\n     " + monthName + " " + year);
         System.out.println("Su Mo Tu We Th Fr Sa");
 
 		for (int i = 0; i < weekDay; i++) System.out.print("   ");
@@ -80,6 +80,8 @@ public class Ex4 {
 			System.out.printf("%2d ", i);
 			if ((i + weekDay) % 7 == 0 || i == days) System.out.println();
 		}
+
+        System.out.println("\n");
 
     }
 
@@ -119,7 +121,7 @@ public class Ex4 {
 			case 10: return "October";
 			case 11: return "November";
 			case 12: return "December";
-			default: return "";
+            default: return "";
 		}
     }
 }
