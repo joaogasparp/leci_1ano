@@ -26,6 +26,10 @@ public class Ex2 {
                     break;
                 }
                 case 2 : {
+                    if (c == null) {
+						System.out.println("Calendário não criado.");
+						break;
+					}
                     System.out.println("Introduza o mês: ");
                     int month = sc.nextInt();
 
@@ -33,6 +37,10 @@ public class Ex2 {
                     break;
                 }
                 case 3 : {
+                    if (c == null) {
+						System.out.println("Calendário não criado.");
+						break;
+					}
                     c.toString();
                     break;
                 }

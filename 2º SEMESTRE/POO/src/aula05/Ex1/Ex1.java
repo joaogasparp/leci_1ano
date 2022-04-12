@@ -28,10 +28,18 @@ public class Ex1 {
                     break;
                 }
                 case 2 : {
+                    if (d == null) {
+						System.out.println("Data não criada.");
+						break;
+					}
                     System.out.println("Data criada: " + d.toString());
                     break;
                 }
                 case 3 : {
+                    if (d == null) {
+						System.out.println("Data não criada.");
+						break;
+					}
                     System.out.println("Introduza o incremento: ");
                     int days = sc.nextInt();
                     d.increment(days);
@@ -39,6 +47,10 @@ public class Ex1 {
                     break;
                 }
                 case 4 : {
+                    if (d == null) {
+						System.out.println("Data não criada.");
+						break;
+					}
                     System.out.println("Introduza o decremento: ");
                     int days = sc.nextInt();
                     d.decrement(days);
