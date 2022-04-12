@@ -12,7 +12,7 @@ def main():
         b_data = tcp_s.recv(4096)
         str_data = b_data.decode("utf-8")
         print(str_data)
-    
+        
     tcp_s.close()
     
 main()

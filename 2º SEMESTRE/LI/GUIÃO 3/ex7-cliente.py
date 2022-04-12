@@ -4,7 +4,7 @@ import sys
 
 def main():
     udp_client = socket.socket(family=socket.AF_INET, type=socket.SOCK_DGRAM)
-    udp_client.bind(("127.0.0.1", 123))
+    udp_client.bind(("127.0.0.1", 0))
     while 1:
         rsocks = select.select([udp_client, sys.stdin, ], [], [])[0]
         for sock in rsocks:
