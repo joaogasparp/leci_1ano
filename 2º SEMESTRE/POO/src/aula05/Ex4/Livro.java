@@ -11,7 +11,7 @@ public class Livro {
   public Livro(String titulo, String tipoEmprestimo) {
         this.id = idLivros++;
         this.titulo = titulo;
-		this.tipoEmprestimo = tipoEmprestimo;
+		    this.tipoEmprestimo = tipoEmprestimo;
 	}
 
 	public Livro(String titulo) {
@@ -32,7 +32,7 @@ public class Livro {
         return this.tipoEmprestimo;
     }
 
-    public void setTitulo(String titulo) {
+  public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
 
@@ -49,7 +49,7 @@ public class Livro {
 		this.emprestado = emprestado;
 	}
 
-    @Override
+  @Override
 	public String toString() {
 		return "Livro " + this.id + "; " + this.titulo + "; " + this.tipoEmprestimo;
 	}
