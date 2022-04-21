@@ -19,8 +19,8 @@ public class Conjunto {
 
     public void remove(int n) {
         if (this.vector != null) {
-			this.vector.remove(this.vector.indexOf(n));
-		}
+	    this.vector.remove(this.vector.indexOf(n));
+	}
     }
 
     public void empty() {
