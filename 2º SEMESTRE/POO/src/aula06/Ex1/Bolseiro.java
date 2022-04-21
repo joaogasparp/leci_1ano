@@ -1,4 +1,4 @@
-package aula06;
+package aula06.Ex1;
 import aula05.Ex1.Date;
 
 public class Bolseiro extends Aluno{
