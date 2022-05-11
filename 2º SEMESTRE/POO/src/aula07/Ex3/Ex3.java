@@ -94,9 +94,7 @@ public class Ex3 {
 
                 case 2 : {
 
-                    carro c1 = new carro("B", "Gasolina");
-                    carro c2 = new carro();
-                    carro c3 = new carro();
+                  
 
                 }
 
