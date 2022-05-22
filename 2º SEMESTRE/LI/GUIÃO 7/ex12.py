@@ -8,14 +8,12 @@ def main(argv):
     
     print("Opened database successfully")
     
-    result = cur.execute('''SELECT firstname FROM contacts ORDER BY firstname''')
-    n = 0
-    for name in result:
-        print('%s' % name)
-        n += 1    
-    
-    print(n, 'contactos')
-        
+    firstname = input("Firstname? ")
+    middlename = input("Middlename? ")
+    result = db.execute("SELECT * FROM contacts WHERE firstname LIKE ? OR middlename LIKE ?", (firstname, middlename,))
+    for contact in result:
+        print(contact)
+            
     print("Operation done successfully")
     
     db.commit()
