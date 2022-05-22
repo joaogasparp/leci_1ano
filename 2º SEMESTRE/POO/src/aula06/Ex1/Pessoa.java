@@ -29,5 +29,4 @@ public class Pessoa {
 	public String toString() {
 		return this.nome + "; CC: " + this.cc + "; Data de Nascimento: " + this.dataNasc;
 	}
-
 }

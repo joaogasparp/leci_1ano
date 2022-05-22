@@ -8,7 +8,6 @@ public class Ex1 {
 		Circle c = null;
 		Rectangle r = null;
 		Triangle t = null;
-		Forma f = null;
 		Scanner sc = new Scanner(System.in);
 
 		do {
@@ -37,8 +36,6 @@ public class Ex1 {
                     System.out.println("Introduza o raio: ");
                     double radius = sc.nextInt();
 					System.out.println("Introduza a cor: ");
-                    String cor = sc.nextLine();
-					f = new Forma(cor);
                     c = new Circle(radius);
 					break;
                 }
@@ -48,8 +45,6 @@ public class Ex1 {
                     System.out.println("Introduza a altura: ");
                     double height = sc.nextInt();
 					System.out.println("Introduza a cor: ");
-                    String cor = sc.nextLine();
-					f = new Forma(cor);
 					r = new Rectangle(width, height);
 					break;
                 }
@@ -61,9 +56,7 @@ public class Ex1 {
                     System.out.println("Introduza o lado 3: ");
                     double side3 = sc.nextInt();
 					System.out.println("Introduza a cor: ");
-                    String cor = sc.nextLine();
-					f = new Forma(cor);
-					t = new Triangle(side1, side2, side3);
+                    t = new Triangle(side1, side2, side3);
 					break;
                 }
 				case 4 : {
