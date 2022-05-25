@@ -1,6 +1,6 @@
 package aula07.Ex2;
 
-public class DateYMD {
+public class DateYMD extends Date{
 
     private int day;
     private int month;
@@ -95,6 +95,18 @@ public class DateYMD {
 
     public String toString() {
         return String.format("%04d-%02d-%02d", this.year, this.month, this.day);
+    }
+
+    @Override
+    public void increment() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void decrement() {
+        // TODO Auto-generated method stub
+        
     }
 
 }
