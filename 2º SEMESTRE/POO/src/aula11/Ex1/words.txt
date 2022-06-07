@@ -1,0 +1,3 @@
+Para cada palavra encontrada no ficheiro o programa deverá associar um conjunto de todas as
+palavras seguintes contando igualmente quantas vezes cada par ocorre.
+Teste o programa com o ficheiro “major.txt”. O resultado deverá ser semelhante a:
