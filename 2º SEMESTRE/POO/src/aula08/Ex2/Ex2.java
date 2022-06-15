@@ -1,6 +1,6 @@
 package aula08.Ex2;
 
-public class A08E02 {
+public class Ex2 {
 
 	public static void main(String[] args) {
 		Ementa ementa = new Ementa("Especial Primavera", "Snack da UA");

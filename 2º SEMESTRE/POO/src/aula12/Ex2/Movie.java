@@ -58,7 +58,7 @@ public class Movie extends Ex2 implements Comparable<Movie>{
     
     @Override
     public String toString() {
-        return "Filme{nome="+this.name+"; score="+this.score+"; rating="+this.rating+"; genre="+this.genre+"; running time=" + this.runningtime+"}"; 
+        return "Filme{ nome="+this.name+"; score="+this.score+"; rating="+this.rating+"; genre="+this.genre+"; running time=" + this.runningtime+" }"; 
     }
 
     @Override

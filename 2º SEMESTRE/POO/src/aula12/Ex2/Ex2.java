@@ -34,6 +34,7 @@ public class Ex2 {
                     for (Movie filme : filmes) {
                         System.out.println(filme.toString());
                     }
+                    break;
                 }
                 case 2 : {
                     SortedSet<Movie> decrScore = new TreeSet<>(Comparator.comparing(Movie::getScore).reversed());
@@ -41,6 +42,7 @@ public class Ex2 {
                     for (Movie filme : decrScore) {
                         System.out.println(filme.toString());
                     }
+                    break;
                 }
                 case 3 : {
                     SortedSet<Movie> creTime = new TreeSet<>(Comparator.comparing(Movie::getRunningtime));
@@ -48,6 +50,7 @@ public class Ex2 {
                     for (Movie filme : creTime) {
                         System.out.println(filme.toString());
                     }
+                    break;
                 }
                 case 4 : {
                     SortedSet<String> genre = new TreeSet<String>();
@@ -57,13 +60,12 @@ public class Ex2 {
                     for (String genero : genre) {
                         System.out.println(genero);
                     }
+                    break;
                 }
-
             }
         } while (input != 5);
 
         escreverFicheiro(filmes);
-
         sc.close();
     }
 
