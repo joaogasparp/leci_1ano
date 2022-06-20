@@ -21,7 +21,7 @@ public class RandomTickets {
         }
         return festivals;
     }
-
+/*   
     public void getRandomTicket(Person person) throws IOException {
         int i = 0;
         int j = (readTickets()).size()-1;
@@ -29,7 +29,7 @@ public class RandomTickets {
         int numRandom = (int) (Math.random() * intervalo) + i;
         Festivals aleatorio = (readTickets()).get(numRandom);
     }
-/*    
+    
     public void listPersons() {
         
     }

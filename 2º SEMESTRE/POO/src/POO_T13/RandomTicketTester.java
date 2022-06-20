@@ -9,7 +9,7 @@ import aula07.Ex2.DateYMD;
 public class RandomTicketTester {
     public static void main(String[] args) throws IOException {
 
-        RandomTickets tickets = new RandomTickets();
+        //RandomTickets tickets = new RandomTickets();
 
         List<Person> r = new ArrayList<Person>();        
         r.add(new Person("Maria", 34317245, new DateYMD(12, 1, 2000)));
@@ -20,11 +20,11 @@ public class RandomTicketTester {
 
         // selecionar aleatoriamente uma pessoa, que receberá em cada sorteio 1 ou 2 bilhetes para um dos festivais (escolhido aleatoriamente)
         // os bilhetes disponíveis estão listados no ficheiro 'Lista_festivais.txt'
-        for (int i=0; i<2*r.size(); i++) {
+/*      for (int i=0; i<2*r.size(); i++) {
             int ri = (int) (Math.random()*r.size());
             tickets.getRandomTicket(r.get(ri));
         }
-
+*/   
         //tickets.listPersons();
         //tickets.listAvailableTickets();
     }
