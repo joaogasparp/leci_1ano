@@ -61,52 +61,35 @@ public class DateYMD extends Date{
 		return this.year;
 	}
 
-    public void increment(int days) {
-        for (int i = 0; i < days; i++) {
-            if (this.day == monthDays(month, year)) {
-                this.day = 1;
-                if (this.month == 12) {
-                    this.month = 1;
-                    this.year++;
-                } else {
-                    this.month++;
-                }
-            } else {
-                this.day++;
-            }
-        }
+    public void increment() {
+        if (this.day == monthDays(this.month, this.year)) {
+			this.day = 1;
+			if (this.month == 12) {
+				this.month = 1;
+				this.year++;
+			} else {
+				this.month++;
+			}
+		} else {
+			this.day++;
+		}
     }
 
-    public void decrement(int days) {
-        for (int i = 0; i < days; i++) {
-            if (this.day == 1) {
-                if (this.month == 1) {
-                    this.month = 12;
-                    this.year--;
-                } else {
-                    this.month--;
-                }
-                this.day = monthDays(this.month, this.year);
-            } else {
-                this.day--;
-            }
-        }
+    public void decrement() {
+        if (this.day == 1) {
+			if (this.month == 1) {
+				this.month = 12;
+				this.year--;
+			} else {
+				this.month--;
+			}
+			this.day = monthDays(this.month, this.year);
+		} else {
+			this.day--;
+		}
     }
 
     public String toString() {
         return String.format("%04d-%02d-%02d", this.year, this.month, this.day);
     }
-
-    @Override
-    public void increment() {
-        // TODO Auto-generated method stub
-        
-    }
-
-    @Override
-    public void decrement() {
-        // TODO Auto-generated method stub
-        
-    }
-
 }

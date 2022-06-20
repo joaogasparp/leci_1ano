@@ -1,51 +1,60 @@
 package POO_T13;
 
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import java.util.Scanner;
+import java.util.Map;
 
 public class RandomTickets {
 
-    public static List<Festivals> readTickets() throws IOException {
-        Scanner file = new Scanner(new FileReader("src/treinar/bilhetes/Lista_festivais.txt"));
-        List<Festivals> festivals = new ArrayList<>();
+    private TicketManager manager = new TicketManager();
+    private Map<Person, ArrayList<Ticket>> peopleTicketsMap = new HashMap<>();
 
-        file.nextLine();
+    public void getRandomTicket(Person p) {
 
-        while (file.hasNextLine()) {
-            String festival = file.nextLine();
-            String[] atributos = festival.split("\t");
-            festivals.add(new Festivals(atributos[0], atributos[1], atributos[2], atributos[3], Integer.parseInt(atributos[4])));
-        }
-        return festivals;
+        if (!peopleTicketsMap.containsKey(p))
+            peopleTicketsMap.put(p, new ArrayList<>());
+
+        ArrayList<Ticket> currList = peopleTicketsMap.get(p);
+        if (currList.size() >= 2) return;
+
+        Ticket newTicket = manager.getRandomTicket();
+        currList.add(newTicket);
+
+        peopleTicketsMap.replace(p, currList);
+
     }
-/*   
-    public void getRandomTicket(Person person) throws IOException {
-        int i = 0;
-        int j = (readTickets()).size()-1;
-        int intervalo = (j - i) + 1;     
-        int numRandom = (int) (Math.random() * intervalo) + i;
-        Festivals aleatorio = (readTickets()).get(numRandom);
-    }
-    
+
     public void listPersons() {
-        
+        for (Person p : peopleTicketsMap.keySet()) {
+
+            ArrayList<Ticket> ticketList = peopleTicketsMap.get(p);
+
+            System.out.println(String.format("%s, %s, %s - %s %s %s:", 
+                p.getName(), 
+                p.getCc(), 
+                p.getBirthDate(), 
+                ticketList.size(), 
+                ticketList.size() == 1 ? "bilhete" : "bilhetes",
+                ticketList.size() == 1 ? "atribuído" : "atribuído"));
+
+            for (Ticket t : ticketList) {
+                System.out.println(String.format(" - %s", t));
+            }
+
+            System.out.println("");
+
+        }
     }
 
     public void listAvailableTickets() {
+        List<Ticket> ticketList = manager.getRemainingTickets();
 
-        for (Object personObject : ((Map) persons).keySet()) {
-            Person person = (Person) personObject;
+        System.out.println(String.format("%s bilhetes restantes:", ticketList.size()));
 
-            Map personFestivals = (Map) ((Map) persons).get(person);
-
-            for (Object festivalObject : personFestivals.keySet()) {
-                Festivals festival = (Festivals) festivalObject;
-                int qtd = (int) personFestivals.get(person);
-            }
+        for (Ticket t : ticketList) {
+            System.out.println(String.format(" - %s", t));
         }
-
-    }*/
+    }
+    
 }
