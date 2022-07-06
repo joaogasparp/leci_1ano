@@ -1,13 +1,10 @@
 package POO_T13;
 
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-
-import aula07.Ex2.DateYMD;
+import java.util.ArrayList;
 
 public class RandomTicketTester {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         RandomTickets tickets = new RandomTickets();
 
@@ -25,7 +22,7 @@ public class RandomTicketTester {
             tickets.getRandomTicket(r.get(ri));
         }
 
-        //tickets.listPersons();
-        //tickets.listAvailableTickets();
+        tickets.listPersons();
+        tickets.listAvailableTickets();
     }
 }

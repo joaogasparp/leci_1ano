@@ -1,45 +1,66 @@
 package POO_T13;
 
-import aula07.Ex2.DateYMD;
-
 public class Person {
-
     private String name;
     private int cc;
-    private DateYMD dateYMD;
+    private Date birthDate;
 
-    public Person(String name, int cc, DateYMD dateYMD) {
+    public Person(String name, int cc, Date birthDate) {
         this.name = name;
         this.cc = cc;
-        this.dateYMD = dateYMD;
+        this.birthDate = birthDate;
     }
 
     public String getName() {
-        return this.name;
+        return name;
+    }
+
+    public int getCc() {
+        return cc;
+    }
+
+    public Date getBirthDate() {
+        return birthDate;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public int getCC() {
-        return this.cc;
-    }
-
-    public void setCC(int cc) {
+    public void setCc(int cc) {
         this.cc = cc;
     }
 
-    public DateYMD getDateYMD() {
-        return this.dateYMD;
-    }
-
-    public void setDateYMD(DateYMD dateYMD) {
-        this.dateYMD = dateYMD;
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
     }
 
     @Override
     public String toString() {
-        return "Nome: " +this.name + "; CC: " + this.cc + "; Data de Nascimento: " + this.dateYMD;
+        return name + "; CC: " + cc + "; Data de Nascimento: " + birthDate;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+
+        final Person other = (Person) obj;
+        return this.cc == other.cc && this.name.equals(other.name) && this.birthDate.equals(other.birthDate);
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((birthDate == null) ? 0 : birthDate.hashCode());
+        result = prime * result + cc;
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        return result;
+    }
+
 }
