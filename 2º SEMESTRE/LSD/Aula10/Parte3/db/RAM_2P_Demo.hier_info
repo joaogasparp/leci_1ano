@@ -1,0 +1,125 @@
+|RAM_2P_Demo
+LEDG[0] <= ClkDividerN:inst1.clkOut
+CLOCK_50 => ClkDividerN:inst1.clkIn
+LEDR[0] <= RAM_2P_16_8:inst3.readData[0]
+LEDR[1] <= RAM_2P_16_8:inst3.readData[1]
+LEDR[2] <= RAM_2P_16_8:inst3.readData[2]
+LEDR[3] <= RAM_2P_16_8:inst3.readData[3]
+LEDR[4] <= RAM_2P_16_8:inst3.readData[4]
+LEDR[5] <= RAM_2P_16_8:inst3.readData[5]
+LEDR[6] <= RAM_2P_16_8:inst3.readData[6]
+LEDR[7] <= RAM_2P_16_8:inst3.readData[7]
+KEY[0] => RAM_2P_16_8:inst3.clk
+SW4 => RAM_2P_16_8:inst3.writeEnable
+SW3 => RAM_2P_16_8:inst3.readAddress[3]
+SW2 => RAM_2P_16_8:inst3.readAddress[2]
+SW1 => RAM_2P_16_8:inst3.readAddress[1]
+SW0 => RAM_2P_16_8:inst3.readAddress[0]
+SW17 => RAM_2P_16_8:inst3.writeData[7]
+SW16 => RAM_2P_16_8:inst3.writeData[6]
+SW15 => RAM_2P_16_8:inst3.writeData[5]
+SW14 => RAM_2P_16_8:inst3.writeData[4]
+SW13 => RAM_2P_16_8:inst3.writeData[3]
+SW12 => RAM_2P_16_8:inst3.writeData[2]
+SW11 => RAM_2P_16_8:inst3.writeData[1]
+SW10 => RAM_2P_16_8:inst3.writeData[0]
+
+
+|RAM_2P_Demo|ClkDividerN:inst1
+clkIn => clkOut~reg0.CLK
+clkIn => s_divCounter[0].CLK
+clkIn => s_divCounter[1].CLK
+clkIn => s_divCounter[2].CLK
+clkIn => s_divCounter[3].CLK
+clkIn => s_divCounter[4].CLK
+clkIn => s_divCounter[5].CLK
+clkIn => s_divCounter[6].CLK
+clkIn => s_divCounter[7].CLK
+clkIn => s_divCounter[8].CLK
+clkIn => s_divCounter[9].CLK
+clkIn => s_divCounter[10].CLK
+clkIn => s_divCounter[11].CLK
+clkIn => s_divCounter[12].CLK
+clkIn => s_divCounter[13].CLK
+clkIn => s_divCounter[14].CLK
+clkIn => s_divCounter[15].CLK
+clkIn => s_divCounter[16].CLK
+clkIn => s_divCounter[17].CLK
+clkIn => s_divCounter[18].CLK
+clkIn => s_divCounter[19].CLK
+clkIn => s_divCounter[20].CLK
+clkIn => s_divCounter[21].CLK
+clkIn => s_divCounter[22].CLK
+clkIn => s_divCounter[23].CLK
+clkIn => s_divCounter[24].CLK
+clkIn => s_divCounter[25].CLK
+clkIn => s_divCounter[26].CLK
+clkOut <= clkOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RAM_2P_Demo|RAM_2P_16_8:inst3
+clk => s_memory~12.CLK
+clk => s_memory~0.CLK
+clk => s_memory~1.CLK
+clk => s_memory~2.CLK
+clk => s_memory~3.CLK
+clk => s_memory~4.CLK
+clk => s_memory~5.CLK
+clk => s_memory~6.CLK
+clk => s_memory~7.CLK
+clk => s_memory~8.CLK
+clk => s_memory~9.CLK
+clk => s_memory~10.CLK
+clk => s_memory~11.CLK
+clk => s_memory.CLK0
+writeEnable => s_memory~12.DATAIN
+writeEnable => s_memory.WE
+writeAddress[0] => s_memory~3.DATAIN
+writeAddress[0] => s_memory.WADDR
+writeAddress[1] => s_memory~2.DATAIN
+writeAddress[1] => s_memory.WADDR1
+writeAddress[2] => s_memory~1.DATAIN
+writeAddress[2] => s_memory.WADDR2
+writeAddress[3] => s_memory~0.DATAIN
+writeAddress[3] => s_memory.WADDR3
+writeData[0] => s_memory~11.DATAIN
+writeData[0] => s_memory.DATAIN
+writeData[1] => s_memory~10.DATAIN
+writeData[1] => s_memory.DATAIN1
+writeData[2] => s_memory~9.DATAIN
+writeData[2] => s_memory.DATAIN2
+writeData[3] => s_memory~8.DATAIN
+writeData[3] => s_memory.DATAIN3
+writeData[4] => s_memory~7.DATAIN
+writeData[4] => s_memory.DATAIN4
+writeData[5] => s_memory~6.DATAIN
+writeData[5] => s_memory.DATAIN5
+writeData[6] => s_memory~5.DATAIN
+writeData[6] => s_memory.DATAIN6
+writeData[7] => s_memory~4.DATAIN
+writeData[7] => s_memory.DATAIN7
+readAddress[0] => s_memory.RADDR
+readAddress[1] => s_memory.RADDR1
+readAddress[2] => s_memory.RADDR2
+readAddress[3] => s_memory.RADDR3
+readData[0] <= s_memory.DATAOUT
+readData[1] <= s_memory.DATAOUT1
+readData[2] <= s_memory.DATAOUT2
+readData[3] <= s_memory.DATAOUT3
+readData[4] <= s_memory.DATAOUT4
+readData[5] <= s_memory.DATAOUT5
+readData[6] <= s_memory.DATAOUT6
+readData[7] <= s_memory.DATAOUT7
+
+
+|RAM_2P_Demo|CounterUp_4:inst2
+clk => s_count[0].CLK
+clk => s_count[1].CLK
+clk => s_count[2].CLK
+clk => s_count[3].CLK
+count[0] <= s_count[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= s_count[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= s_count[2].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= s_count[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,140 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/joaog/LSD/Aula5/Parte4/Resolucao/simulation/modelsim
+Eclkdividern
+Z1 w1457522920
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z5 8C:/Users/joaog/LSD/Aula5/Parte4/Resolucao/ClkDividerN.vhd
+Z6 FC:/Users/joaog/LSD/Aula5/Parte4/Resolucao/ClkDividerN.vhd
+l0
+L5 1
+VVERmR>g^?kVB?gX0=T`0Z2
+!s100 Mn^6;E6Ljhca^Mc=WzZ@^2
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1655127765
+!i10b 1
+Z9 !s108 1655127765.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaog/LSD/Aula5/Parte4/Resolucao/ClkDividerN.vhd|
+!s107 C:/Users/joaog/LSD/Aula5/Parte4/Resolucao/ClkDividerN.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+DEx4 work 11 clkdividern 0 22 VERmR>g^?kVB?gX0=T`0Z2
+!i122 2
+l15
+L11 22
+V9Uj2DGYg2GMBl2ehL;z[11
+!s100 F=82o?U]8m3[;]6Di:CST2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+Z13 !s107 C:/Users/joaog/LSD/Aula5/Parte4/Resolucao/ClkDividerN.vhd|
+!i113 1
+R11
+R12
+Eclkenablegenerator
+Z14 w1457522840
+R2
+R3
+R4
+!i122 1
+R0
+Z15 8C:/Users/joaog/LSD/Aula5/Parte4/Resolucao/ClkEnableGenerator.vhd
+Z16 FC:/Users/joaog/LSD/Aula5/Parte4/Resolucao/ClkEnableGenerator.vhd
+l0
+L5 1
+VjGUKi`kAhI9Jh=XE^9M=d1
+!s100 f45lNIQILHalGih;8ULzV2
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaog/LSD/Aula5/Parte4/Resolucao/ClkEnableGenerator.vhd|
+Z18 !s107 C:/Users/joaog/LSD/Aula5/Parte4/Resolucao/ClkEnableGenerator.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+R4
+DEx4 work 18 clkenablegenerator 0 22 jGUKi`kAhI9Jh=XE^9M=d1
+!i122 1
+l16
+L12 18
+VlQoU6N92D3RoUzY>^XRfX2
+!s100 1z_Y?1z`:[eHbMV:8@O>P2
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R11
+R12
+Ecounter4bits
+Z19 w1457522624
+R2
+R3
+R4
+!i122 0
+R0
+Z20 8C:/Users/joaog/LSD/Aula5/Parte4/Resolucao/Counter4Bits.vhd
+Z21 FC:/Users/joaog/LSD/Aula5/Parte4/Resolucao/Counter4Bits.vhd
+l0
+L5 1
+Vo4::`2Le?DWTG<Nj@U_^T1
+!s100 8RF<4okN;8G1YE_3GCcUU0
+R7
+31
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaog/LSD/Aula5/Parte4/Resolucao/Counter4Bits.vhd|
+Z23 !s107 C:/Users/joaog/LSD/Aula5/Parte4/Resolucao/Counter4Bits.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+R4
+DEx4 work 12 counter4bits 0 22 o4::`2Le?DWTG<Nj@U_^T1
+!i122 0
+l19
+L15 29
+VjZH>BeOIBCP^n8WkNJLV`2
+!s100 cj[OYkVUbT943_@?kl4MN3
+R7
+31
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R11
+R12

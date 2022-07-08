@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Jun 21 10:07:09 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : TennisCounter_Demo
+Top-level Entity Name : TennisCounter_Demo
+Family : Cyclone IV E
+Total logic elements : 540
+    Total combinational functions : 535
+    Dedicated logic registers : 186
+Total registers : 186
+Total pins : 72
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

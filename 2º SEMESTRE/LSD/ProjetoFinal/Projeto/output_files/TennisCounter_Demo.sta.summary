@@ -1,0 +1,185 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -4.604
+TNS   : -563.973
+
+Type  : Slow 1200mV 85C Model Setup 'SetFSM:s_set_fsm_a|PS.G0'
+Slack : -4.004
+TNS   : -6.885
+
+Type  : Slow 1200mV 85C Model Setup 'SetFSM:s_set_fsm_b|PS.G0'
+Slack : -3.282
+TNS   : -6.058
+
+Type  : Slow 1200mV 85C Model Setup 'SetFSM:s_set_fsm_a|PS.G1'
+Slack : -2.812
+TNS   : -16.323
+
+Type  : Slow 1200mV 85C Model Setup 'SetFSM:s_set_fsm_b|PS.G1'
+Slack : -2.593
+TNS   : -15.965
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SetFSM:s_set_fsm_b|PS.G1'
+Slack : 0.862
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SetFSM:s_set_fsm_a|PS.G1'
+Slack : 1.062
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SetFSM:s_set_fsm_b|PS.G0'
+Slack : 2.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SetFSM:s_set_fsm_a|PS.G0'
+Slack : 2.822
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -242.010
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SetFSM:s_set_fsm_a|PS.G0'
+Slack : 0.374
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SetFSM:s_set_fsm_b|PS.G1'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SetFSM:s_set_fsm_b|PS.G0'
+Slack : 0.418
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SetFSM:s_set_fsm_a|PS.G1'
+Slack : 0.438
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -4.162
+TNS   : -499.967
+
+Type  : Slow 1200mV 0C Model Setup 'SetFSM:s_set_fsm_a|PS.G0'
+Slack : -3.597
+TNS   : -6.181
+
+Type  : Slow 1200mV 0C Model Setup 'SetFSM:s_set_fsm_b|PS.G0'
+Slack : -2.942
+TNS   : -5.398
+
+Type  : Slow 1200mV 0C Model Setup 'SetFSM:s_set_fsm_a|PS.G1'
+Slack : -2.496
+TNS   : -14.826
+
+Type  : Slow 1200mV 0C Model Setup 'SetFSM:s_set_fsm_b|PS.G1'
+Slack : -2.305
+TNS   : -14.741
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SetFSM:s_set_fsm_b|PS.G1'
+Slack : 0.842
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SetFSM:s_set_fsm_a|PS.G1'
+Slack : 1.061
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SetFSM:s_set_fsm_b|PS.G0'
+Slack : 2.139
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SetFSM:s_set_fsm_a|PS.G0'
+Slack : 2.609
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -242.010
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SetFSM:s_set_fsm_b|PS.G1'
+Slack : 0.314
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SetFSM:s_set_fsm_a|PS.G0'
+Slack : 0.326
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SetFSM:s_set_fsm_a|PS.G1'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SetFSM:s_set_fsm_b|PS.G0'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -1.725
+TNS   : -187.772
+
+Type  : Fast 1200mV 0C Model Setup 'SetFSM:s_set_fsm_a|PS.G0'
+Slack : -1.634
+TNS   : -2.650
+
+Type  : Fast 1200mV 0C Model Setup 'SetFSM:s_set_fsm_a|PS.G1'
+Slack : -1.400
+TNS   : -7.099
+
+Type  : Fast 1200mV 0C Model Setup 'SetFSM:s_set_fsm_b|PS.G0'
+Slack : -1.251
+TNS   : -2.249
+
+Type  : Fast 1200mV 0C Model Setup 'SetFSM:s_set_fsm_b|PS.G1'
+Slack : -1.228
+TNS   : -6.666
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.056
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SetFSM:s_set_fsm_b|PS.G1'
+Slack : 0.223
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SetFSM:s_set_fsm_a|PS.G1'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SetFSM:s_set_fsm_b|PS.G0'
+Slack : 1.219
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'SetFSM:s_set_fsm_a|PS.G0'
+Slack : 1.421
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -200.190
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SetFSM:s_set_fsm_b|PS.G1'
+Slack : 0.329
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SetFSM:s_set_fsm_a|PS.G1'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SetFSM:s_set_fsm_b|PS.G0'
+Slack : 0.437
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SetFSM:s_set_fsm_a|PS.G0'
+Slack : 0.441
+TNS   : 0.000
+
+------------------------------------------------------------

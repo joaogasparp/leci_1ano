@@ -1,0 +1,9 @@
+|FreqDivider
+clkIn => s_divCounter[0].CLK
+clkIn => s_divCounter[1].CLK
+clkIn => s_divCounter[2].CLK
+clkIn => s_divCounter[3].CLK
+clkIn => clkOut~reg0.CLK
+clkOut << clkOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

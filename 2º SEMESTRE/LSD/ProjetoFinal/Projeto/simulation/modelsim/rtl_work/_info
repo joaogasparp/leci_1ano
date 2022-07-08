@@ -1,0 +1,52 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/joaog/ProjetoFinal/simulation/modelsim
+Enormalgamefsm
+Z1 w1655559532
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/joaog/ProjetoFinal/NormalGameFSM.vhd
+Z5 FC:/Users/joaog/ProjetoFinal/NormalGameFSM.vhd
+l0
+L4 1
+V1_OaoY]hU`;9icdZ:e4gd2
+!s100 ^<[3E_<i?EaJf0cU_oWE52
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1655669477
+!i10b 1
+Z8 !s108 1655669477.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaog/ProjetoFinal/NormalGameFSM.vhd|
+!s107 C:/Users/joaog/ProjetoFinal/NormalGameFSM.vhd|
+!i113 1
+Z10 o-93 -work work
+Z11 tExplicit 1 CvgOpt 0
+Abehav
+R2
+R3
+DEx4 work 13 normalgamefsm 0 22 1_OaoY]hU`;9icdZ:e4gd2
+!i122 0
+l26
+L16 281
+Vl]oN<EJ?8`j@iIoN0Wd;g3
+!s100 V3PXVd]n`[;E8BA@Dc_`z3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+Z12 !s107 C:/Users/joaog/ProjetoFinal/NormalGameFSM.vhd|
+!i113 1
+R10
+R11
