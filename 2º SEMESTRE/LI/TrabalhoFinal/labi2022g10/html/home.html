@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Caderneta de Cromos - Início</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/functions.js"></script>
+    <link rel="stylesheet" href="../css/navBarStyle.css">
+    <link rel="stylesheet" href="../css/homeStyle.css">
+</head>
+
+<body onload="setHrefs();">
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="https://www.ua.pt/"><img src="../images/uaLogo.png" width="50px"
+                        height="50px"></a></li>
+            <li class="item"><a href="#" id="home">Início</a></li>
+            <li class="item"><a href="#" id="collections">Coleções</a></li>
+            <li class="item"><a href="#" id="about">Sobre</a></li>
+            <li class="item button"><a href="#" id="signout">Sair</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <section class="home">
+            <div class="container">
+                <div class="dataHome">
+                    <h1 class="title">
+                        Bem vindo à sua caderneta digital
+                    </h1>
+                    <div class="line"></div>
+
+                    <div class="panel1">
+                        <h1 class="title1">Coleções</h1>
+                        <p class="text1">Veja as coleções existentes</p>
+                        <input id="collection_name1" type="text" autofocus placeholder="Nome da Coleção" class="input">
+                        <button class="homeButton" onclick="goToCollection('collection_name1');">Explorar</button>
+
+                        <h1 class="title1">Criar nova coleção</h1>
+                        <br>
+                        <input id="collection_name" type="text" autofocus placeholder="Nome de nova Coleção" class="input">
+                        <button class="homeButton" onclick="createCollection();">Criar</button>
+                    </div>
+                    <div class="lineB"></div>
+
+                    <div class="panel2">
+                        <h1 class="title2">Projeto</h1>
+                        <p class="text1">Veja os membros do grupo que realizaram este <br>trabalho e aprenda mais sobre
+                            ele</p>
+                        <a id=button3 href="#" onclick="setHref('button3', 'about')">
+                            <button class="homeButton">Sobre</button>
+                        </a>
+                    </div>
+                    <div class="lineB"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

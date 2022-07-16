@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Caderneta de Cromos Digital - Registar</title>
+    <meta charset="uth-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/errorHandling.js"></script>
+
+</head>
+
+<body onload="setError();">
+    <div class="container">
+        <h1 class="title">Criar Conta</h1>
+        <p id="error">Usuário ou senha incorretos</p>
+        <form method="post" action="sign_up" class="form">
+            <div class="mensagem mensagemErro"></div>
+            <div class="input_UserPass">
+                <input name="username" type="text" class="inputText" autofocus placeholder="Username">
+                <p></p>
+                <input name="password" type="password" class="inputText" autofocus placeholder="Password">
+            </div>
+            <button class="botao">Registar</button>
+        </form>
+        <p class="texto">
+            <a href="/" class="directLink">Possui uma conta?</a>
+        </p>
+    </div>
+</body>
+
+</html>

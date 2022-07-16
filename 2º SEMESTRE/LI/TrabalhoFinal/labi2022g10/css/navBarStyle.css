@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+nav {
+    background: #222;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.menu li {
+    font-size: 16px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.menu li a {
+    display: block;
+}
+
+.button.sec {
+    border-bottom: 1px #444 solid;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    order: 1;
+}
+
+.item.button {
+    order: 2;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+.bars {
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before,
+.bars::after {
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before {
+    top: 5px;
+}
+
+.bars::after {
+    bottom: 5px;
+}
+
+@media all and (min-width: 468px) {
+    .menu {
+        justify-content: center;
+    }
+    .logo {
+        flex: 1;
+    }
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        order: 2;
+    }
+    .button.sec {
+        border: 0;
+    }
+    .button a {
+        padding-bottom: 7px;
+        padding-top: 7px;
+        padding-right: 15px;
+        padding-left: 15px;
+        background: #51b400;
+        border: 1px solid #51b400;
+        border-radius: 20px;
+    }
+    .button.sec a {
+        background: transparent;
+    }
+    .button a:hover {
+        transition: all 0.25s;
+    }
+    .button:not(.sec) a:hover {
+        background: #51b400;
+        border-color: #51b400;
+    }
+    .button.sec a:hover {
+        color: #ddd;
+    }
+}
+
+@media all and (min-width:768px) {
+    .item {
+        display: block;
+        width: auto;
+    }
+    .toggle {
+        display: none;
+    }
+    .logo {
+        order: 0;
+    }
+    .item {
+        order: 1;
+    }
+    .button {
+        order: 2;
+    }
+    .menu li {
+        padding: 15px 10px;
+    }
+    .menu li.button {
+        padding-right: 0;
+    }
+}

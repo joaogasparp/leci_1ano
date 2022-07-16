@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Caderneta de Cromos - Criar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/navBarStyle.css">
+    <link rel="stylesheet" href="../css/createStyle.css">
+    <script src="../js/functions.js"></script>
+    <script src="../js/imgHandling.js"></script>
+
+</head>
+
+<body onload="setHrefs();">
+    <nav>
+        <ul class="menu">
+            <li class="logo">
+                <a href="https://www.ua.pt/"><img src="../images/uaLogo.png" width="50px" height="50px"></a>
+            </li>
+            <li class="item"><a href="#" id="home">Início</a></li>
+            <li class="item"><a href="#" id="collections">Coleções</a></li>
+            <li class="item"><a href="#" id="about">Sobre</a></li>
+            <li class="item button"><a href="#" id="signout">Sair</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content_image">
+            <label class="inputf">
+                        <input class="fich" type="file" accept="image/*" onchange="updatePhoto(event)"></input>
+                        <canvas id="photo" width="530" height="400">
+                    </label>
+        </div>
+    </main>
+</body>
+
+</html>

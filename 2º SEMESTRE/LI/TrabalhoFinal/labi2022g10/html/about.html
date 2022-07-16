@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caderneta de Cromos - Acerca</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/navBarStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../js/functions.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+</head>
+
+<body onload="setHrefs();">
+    <nav>
+        <ul class="menu">
+            <li class="logo">
+                <a href="https://www.ua.pt/"><img src="../images/uaLogo.png" width="50px" height="50px"></a>
+            </li>
+            <li class="item"><a href="#" id="home">Início</a></li>
+            <li class="item"><a href="#" id="collections">Coleções</a></li>
+            <li class="item"><a href="#" id="about">Sobre</a></li>
+            <li class="item button"><a href="#" id="signout">Sair</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="image"></div>
+
+        <div class="content">
+
+            <h1>Sobre</h1>
+            <span></span>
+            <p>Trabalho realizado por Pedro Ferreira (98620), João Gaspar (107708), Guilherme Santos (107961), Beatriz Oliveira (108606)</p>
+            <br>
+            <p>Repositório: <a href="http://code.ua.pt/projects/labi2022g10/" style="color: blue;">http://code.ua.pt/projects/labi2022g10/</a></p>
+            <br>
+            <p>Universidade de Aveiro</p>
+            <p>Laboratórios de Informática</p>
+            <ul class="links">
+                <div>
+                    <li><a href="#openModal1">CONTRIBUIÇÕES</a></li>
+                    <div id="openModal1" class="modalDialog">
+                        <div>
+                            <a href="#close" title="Close" class="close">X</a>
+                            <h2>CONTRIBUIÇÕES</h2>
+                            <p>Beatriz Oliveira: 21%</p>
+                            <p>Guilherme Santos: 23%</p>
+                            <p>João Gaspar: 21%</p>
+                            <p>Pedro Ferreira: 35%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical"></div>
+                <div>
+                    <li><a href="#openModal2">LOCALIZAÇÃO</a></li>
+                    <div id="openModal2" class="modalDialog">
+                        <div>
+                            <a href="#close" title="Close" class="close">X</a>
+                            <h2>LOCALIZAÇÃO</h2>
+                            <p>
+                                <div class="mapa">
+                                    <div id="oMeuMapa" style="width: 100%; height: 400px;"></div>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical"></div>
+                <div>
+                    <li><a href="#openModal3">CONTACTOS</a></li>
+                    <div id="openModal3" class="modalDialog">
+                        <div>
+                            <a href="#close" title="Close" class="close">X</a>
+                            <h2>CONTACTOS</h2>
+                            <p>Pedro Ferreira - pedrodsf@ua.pt</p>
+                            <p>João Gaspar - j.gaspar@ua.pt</p>
+                            <p>Guilherme Santos - gssantos@ua.pt</p>
+                            <p>Beatriz Oliveira - beatrizroliveira@ua.pt</p>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+
+        </div>
+    </section>
+
+    <script type="text/javascript" src="../js/mapa.js"></script>
+
+</body>
+
+</html>

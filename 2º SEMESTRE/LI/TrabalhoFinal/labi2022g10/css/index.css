@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: url(../images/backgroundLogIn.png);
+    background-size: cover;
+}
+
+#error {
+    color: red;
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(100, 100, 100, 0.441);
+    background: white;
+    border-radius: 12px;
+}
+
+.container,
+.inputText,
+.botao {
+    font: 500 1rem "Trebuchet MS", sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+.title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.mensagem {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.mensagemSucesso {
+    color: rgb(0, 172, 0);
+}
+
+.mensagemErro {
+    color: rgb(196, 0, 0);
+}
+
+.input_UserPass {
+    margin-bottom: 1rem;
+}
+
+.inputText {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid rgb(185, 185, 185);
+    outline: none;
+    background: rgb(243, 243, 243);
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.inputText:focus {
+    border-color: #53bfe5;
+    background: white;
+}
+
+.erroInput {
+    color: rgb(196, 0, 0);
+    border-color: rgb(196, 0, 0);
+}
+
+.erroText {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: rgb(196, 0, 0);
+}
+
+.botao {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    background: #53bfe5;
+}
+
+.botao:hover {
+    background: #25add2;
+}
+
+.botao:active {
+    transform: scale(0.99);
+}
+
+.texto {
+    text-align: center;
+}
+
+.directLink {
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.directLink:hover {
+    text-decoration: underline;
+}

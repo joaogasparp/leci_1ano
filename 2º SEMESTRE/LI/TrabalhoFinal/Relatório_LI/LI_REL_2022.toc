@@ -1,0 +1,29 @@
+\babel@toc {english}{}
+\babel@toc {portuguese}{}
+\contentsline {paragraph}{}{i}{section*.1}%
+\contentsline {paragraph}{}{i}{section*.2}%
+\contentsline {chapter}{\numberline {1}Introdução}{1}{chapter.1}%
+\contentsline {paragraph}{}{1}{section*.4}%
+\contentsline {chapter}{\numberline {2}Desenvolvimento}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Python}{2}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Módulos}{2}{subsection.2.1.1}%
+\contentsline {paragraph}{}{2}{section*.5}%
+\contentsline {subsection}{\numberline {2.1.2}Base de Dados}{2}{subsection.2.1.2}%
+\contentsline {paragraph}{}{2}{section*.6}%
+\contentsline {subsection}{\numberline {2.1.3}Interligação das Páginas}{5}{subsection.2.1.3}%
+\contentsline {paragraph}{}{5}{section*.8}%
+\contentsline {subsection}{\numberline {2.1.4}Sign in, Sign out e Sign up}{6}{subsection.2.1.4}%
+\contentsline {paragraph}{}{6}{section*.9}%
+\contentsline {subsection}{\numberline {2.1.5}Coleções e uploads}{6}{subsection.2.1.5}%
+\contentsline {paragraph}{}{6}{section*.10}%
+\contentsline {subsection}{\numberline {2.1.6}Configuração e porta TCP}{7}{subsection.2.1.6}%
+\contentsline {paragraph}{}{7}{section*.11}%
+\contentsline {section}{\numberline {2.2}HTML, CSS e JavaScript}{7}{section.2.2}%
+\contentsline {paragraph}{}{7}{section*.13}%
+\contentsline {chapter}{\numberline {3}Resultados}{9}{chapter.3}%
+\contentsline {paragraph}{}{9}{section*.16}%
+\contentsline {section}{\numberline {3.1}Objetivos não cumpridos}{10}{section.3.1}%
+\contentsline {paragraph}{}{10}{section*.17}%
+\contentsline {chapter}{\numberline {4}Conclusão}{11}{chapter.4}%
+\contentsline {paragraph}{}{11}{section*.18}%
+\contentsline {paragraph}{}{12}{section*.20}%

@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+body {
+    background: url(../images/backgroundCreate.png);
+    background-size: cover;
+}
+
+main {
+    margin: 0;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.content_image {
+    background: rgb(251, 251, 251);
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 530;
+    height: 400;
+    border: 2px solid rgb(183, 183, 183);
+    border-radius: 5px;
+    padding: -50px;
+}
+
+.btn,
+.btn-primary,
+.btn-block,
+.btn-input {
+    color: rgb(49, 49, 49);
+}
+
+.butao {
+    background: rgb(0, 187, 0);
+    color: white;
+    border-radius: 15px;
+    font-size: 20px;
+    border: rgb(0, 187, 0);
+    width: 80px;
+    height: 35px;
+}
+
+.butao:hover {
+    background: rgb(0, 147, 0);
+    border: rgb(0, 147, 0);
+}
+
+.fich {
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background: #51b400;
+    border: 1px solid #51b400;
+    border-radius: 20px;
+}
