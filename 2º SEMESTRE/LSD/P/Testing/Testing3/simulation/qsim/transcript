@@ -1,0 +1,24 @@
+# do conv_test.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:54:35 on Jul 18,2022
+# vcom -work work conv_test.vho 
+# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/joaog/OneDrive/Ambiente de Trabalho/UA/1ºANO-LECI/2º SEMESTRE/LSD/P/Testing/Testing3/simulation/qsim/work/_lib.qdb): unable to open database file
+# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/joaog/OneDrive/Ambiente de Trabalho/UA/1ºANO-LECI/2º SEMESTRE/LSD/P/Testing/Testing3/simulation/qsim/work/_lib.qdb): unable to open database file
+# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/joaog/OneDrive/Ambiente de Trabalho/UA/1ºANO-LECI/2º SEMESTRE/LSD/P/Testing/Testing3/simulation/qsim/work/_lib.qdb): unable to open database file
+# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/joaog/OneDrive/Ambiente de Trabalho/UA/1ºANO-LECI/2º SEMESTRE/LSD/P/Testing/Testing3/simulation/qsim/work/_lib.qdb): unable to open database file
+# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/joaog/OneDrive/Ambiente de Trabalho/UA/1ºANO-LECI/2º SEMESTRE/LSD/P/Testing/Testing3/simulation/qsim/work/_lib.qdb): unable to open database file
+# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/joaog/OneDrive/Ambiente de Trabalho/UA/1ºANO-LECI/2º SEMESTRE/LSD/P/Testing/Testing3/simulation/qsim/work/_lib.qdb): unable to open database file
+# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/joaog/OneDrive/Ambiente de Trabalho/UA/1ºANO-LECI/2º SEMESTRE/LSD/P/Testing/Testing3/simulation/qsim/work/_lib.qdb): unable to open database file
+# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/joaog/OneDrive/Ambiente de Trabalho/UA/1ºANO-LECI/2º SEMESTRE/LSD/P/Testing/Testing3/simulation/qsim/work/_lib.qdb): unable to open database file
+# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/joaog/OneDrive/Ambiente de Trabalho/UA/1ºANO-LECI/2º SEMESTRE/LSD/P/Testing/Testing3/simulation/qsim/work/_lib.qdb): unable to open database file
+# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/joaog/OneDrive/Ambiente de Trabalho/UA/1ºANO-LECI/2º SEMESTRE/LSD/P/Testing/Testing3/simulation/qsim/work/_lib.qdb): unable to open database file
+# -- Loading package STANDARD
+# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/Users/joaog/OneDrive/Ambiente de Trabalho/UA/1ºANO-LECI/2º SEMESTRE/LSD/P/Testing/Testing3/simulation/qsim/work/_lib.qdb): unable to open database file
+# mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
+# ** Fatal: (vcom-9) Problem while writing token file "C:/Users/joaog/OneDrive/Ambiente de Trabalho/UA/1ºANO-LECI/2º SEMESTRE/LSD/P/Testing/Testing3/simulation/qsim/work/_temp/vcomfr0sah".
+# ** Note: conv_test.vho(30): VHDL Compiler exiting
+# End time: 17:54:35 on Jul 18,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+# Executing ONERROR command at macro ./conv_test.do line 3
