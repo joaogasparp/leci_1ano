@@ -1,4 +1,4 @@
-# First Year of Computer Engineering and Informatics (LECI)
+# First Year of Computer and Informatics Engineering (LECI)
 
 Welcome to the repository for the first year of Computer and Informatics Engineering (LECI). This repository contains a collection of notes, projects, and assignments from various courses taken during the first year of the program.
 
