@@ -6,11 +6,15 @@ Welcome to the repository for the first year of Computer and Informatics Enginee
 
 The first year of LECI covers foundational topics in computer science and engineering, providing a strong basis for further study. The main subjects include:
 
+### 1st Semester
+
 - **Introdução Aos Sistemas Digitais**
 - **Fundamentos de Programação**
 - **Introdução à Engenharia Informática**
 - **Álgebra Linear e Geometria Analítica**
 - **Cálculo I**
+
+### 2st Semester
 
 - **Matemática Discreta**
 - **Laboratório de Sistemas Digitais**
